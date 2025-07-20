@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		905EB4B82DE6728E00E2335F /* CounterStrikeTVUI in Frameworks */ = {isa = PBXBuildFile; productRef = 905EB4B72DE6728E00E2335F /* CounterStrikeTVUI */; };
+		90ACE8D72E2D23D400A95093 /* CounterStrikeTVService in Frameworks */ = {isa = PBXBuildFile; productRef = 90ACE8D62E2D23D400A95093 /* CounterStrikeTVService */; };
+		90EA9F9D2DE87713002AF1CC /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 90EA9F9C2DE87713002AF1CC /* Swinject */; };
+		90EE761C2E2D20280096AAE7 /* CounterStrikeTVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 90EE761B2E2D20280096AAE7 /* CounterStrikeTVDomain */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		905EB4922DE667C500E2335F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 905EB4732DE667C400E2335F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 905EB47A2DE667C400E2335F;
+			remoteInfo = CounterStrikeTV;
+		};
+		905EB49C2DE667C500E2335F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 905EB4732DE667C400E2335F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 905EB47A2DE667C400E2335F;
+			remoteInfo = CounterStrikeTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		905EB47B2DE667C400E2335F /* CounterStrikeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterStrikeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		905EB4912DE667C500E2335F /* CounterStrikeTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterStrikeTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		905EB49B2DE667C500E2335F /* CounterStrikeTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterStrikeTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		905EB4B32DE671C700E2335F /* CounterStrikeTVService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterStrikeTVService; sourceTree = "<group>"; };
+		905EB4B62DE6726200E2335F /* CounterStrikeTVUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterStrikeTVUI; sourceTree = "<group>"; };
+		908C914A2DE67F89003DE99C /* CounterStrikeTVDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterStrikeTVDomain; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		905EB4A32DE667C600E2335F /* Exceptions for "CounterStrikeTV" folder in "CounterStrikeTV" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 905EB47A2DE667C400E2335F /* CounterStrikeTV */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		905EB47D2DE667C400E2335F /* CounterStrikeTV */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				905EB4A32DE667C600E2335F /* Exceptions for "CounterStrikeTV" folder in "CounterStrikeTV" target */,
+			);
+			path = CounterStrikeTV;
+			sourceTree = "<group>";
+		};
+		905EB4942DE667C500E2335F /* CounterStrikeTVTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CounterStrikeTVTests;
+			sourceTree = "<group>";
+		};
+		905EB49E2DE667C500E2335F /* CounterStrikeTVUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CounterStrikeTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		905EB4782DE667C400E2335F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				905EB4B82DE6728E00E2335F /* CounterStrikeTVUI in Frameworks */,
+				90EE761C2E2D20280096AAE7 /* CounterStrikeTVDomain in Frameworks */,
+				90EA9F9D2DE87713002AF1CC /* Swinject in Frameworks */,
+				90ACE8D72E2D23D400A95093 /* CounterStrikeTVService in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905EB48E2DE667C500E2335F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905EB4982DE667C500E2335F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		905EB4722DE667C400E2335F = {
+			isa = PBXGroup;
+			children = (
+				908C914A2DE67F89003DE99C /* CounterStrikeTVDomain */,
+				905EB4B62DE6726200E2335F /* CounterStrikeTVUI */,
+				905EB4B32DE671C700E2335F /* CounterStrikeTVService */,
+				905EB47D2DE667C400E2335F /* CounterStrikeTV */,
+				905EB4942DE667C500E2335F /* CounterStrikeTVTests */,
+				905EB49E2DE667C500E2335F /* CounterStrikeTVUITests */,
+				905EB4B02DE66C1700E2335F /* Frameworks */,
+				905EB47C2DE667C400E2335F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		905EB47C2DE667C400E2335F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				905EB47B2DE667C400E2335F /* CounterStrikeTV.app */,
+				905EB4912DE667C500E2335F /* CounterStrikeTVTests.xctest */,
+				905EB49B2DE667C500E2335F /* CounterStrikeTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		905EB4B02DE66C1700E2335F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		905EB47A2DE667C400E2335F /* CounterStrikeTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905EB4A42DE667C600E2335F /* Build configuration list for PBXNativeTarget "CounterStrikeTV" */;
+			buildPhases = (
+				905EB4772DE667C400E2335F /* Sources */,
+				905EB4782DE667C400E2335F /* Frameworks */,
+				905EB4792DE667C400E2335F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				905EB47D2DE667C400E2335F /* CounterStrikeTV */,
+			);
+			name = CounterStrikeTV;
+			packageProductDependencies = (
+				905EB4B72DE6728E00E2335F /* CounterStrikeTVUI */,
+				90EA9F9C2DE87713002AF1CC /* Swinject */,
+				90EE761B2E2D20280096AAE7 /* CounterStrikeTVDomain */,
+				90ACE8D62E2D23D400A95093 /* CounterStrikeTVService */,
+			);
+			productName = CounterStrikeTV;
+			productReference = 905EB47B2DE667C400E2335F /* CounterStrikeTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		905EB4902DE667C500E2335F /* CounterStrikeTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905EB4A92DE667C600E2335F /* Build configuration list for PBXNativeTarget "CounterStrikeTVTests" */;
+			buildPhases = (
+				905EB48D2DE667C500E2335F /* Sources */,
+				905EB48E2DE667C500E2335F /* Frameworks */,
+				905EB48F2DE667C500E2335F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				905EB4932DE667C500E2335F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				905EB4942DE667C500E2335F /* CounterStrikeTVTests */,
+			);
+			name = CounterStrikeTVTests;
+			packageProductDependencies = (
+			);
+			productName = CounterStrikeTVTests;
+			productReference = 905EB4912DE667C500E2335F /* CounterStrikeTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		905EB49A2DE667C500E2335F /* CounterStrikeTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 905EB4AC2DE667C600E2335F /* Build configuration list for PBXNativeTarget "CounterStrikeTVUITests" */;
+			buildPhases = (
+				905EB4972DE667C500E2335F /* Sources */,
+				905EB4982DE667C500E2335F /* Frameworks */,
+				905EB4992DE667C500E2335F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				905EB49D2DE667C500E2335F /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				905EB49E2DE667C500E2335F /* CounterStrikeTVUITests */,
+			);
+			name = CounterStrikeTVUITests;
+			packageProductDependencies = (
+			);
+			productName = CounterStrikeTVUITests;
+			productReference = 905EB49B2DE667C500E2335F /* CounterStrikeTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		905EB4732DE667C400E2335F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					905EB47A2DE667C400E2335F = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					905EB4902DE667C500E2335F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 905EB47A2DE667C400E2335F;
+					};
+					905EB49A2DE667C500E2335F = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 905EB47A2DE667C400E2335F;
+					};
+				};
+			};
+			buildConfigurationList = 905EB4762DE667C400E2335F /* Build configuration list for PBXProject "CounterStrikeTV" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"pt-PT",
+			);
+			mainGroup = 905EB4722DE667C400E2335F;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				90EA9F9B2DE87713002AF1CC /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 905EB47C2DE667C400E2335F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				905EB47A2DE667C400E2335F /* CounterStrikeTV */,
+				905EB4902DE667C500E2335F /* CounterStrikeTVTests */,
+				905EB49A2DE667C500E2335F /* CounterStrikeTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		905EB4792DE667C400E2335F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905EB48F2DE667C500E2335F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905EB4992DE667C500E2335F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		905EB4772DE667C400E2335F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905EB48D2DE667C500E2335F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		905EB4972DE667C500E2335F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		905EB4932DE667C500E2335F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 905EB47A2DE667C400E2335F /* CounterStrikeTV */;
+			targetProxy = 905EB4922DE667C500E2335F /* PBXContainerItemProxy */;
+		};
+		905EB49D2DE667C500E2335F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 905EB47A2DE667C400E2335F /* CounterStrikeTV */;
+			targetProxy = 905EB49C2DE667C500E2335F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		905EB4A52DE667C600E2335F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F97HAPK5UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CounterStrikeTV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CounterStrikeTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENABLE_EMIT_CONST_VALUES = YES;
+				SWIFT_OBJC_INTEROP_MODE = objc;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		905EB4A62DE667C600E2335F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F97HAPK5UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CounterStrikeTV/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CounterStrikeTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_ENABLE_EMIT_CONST_VALUES = YES;
+				SWIFT_OBJC_INTEROP_MODE = objc;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		905EB4A72DE667C600E2335F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
+			};
+			name = Debug;
+		};
+		905EB4A82DE667C600E2335F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = "";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		905EB4AA2DE667C600E2335F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F97HAPK5UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CounterStrikeTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CounterStrikeTV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CounterStrikeTV";
+			};
+			name = Debug;
+		};
+		905EB4AB2DE667C600E2335F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F97HAPK5UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CounterStrikeTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CounterStrikeTV.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CounterStrikeTV";
+			};
+			name = Release;
+		};
+		905EB4AD2DE667C600E2335F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F97HAPK5UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CounterStrikeTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CounterStrikeTV;
+			};
+			name = Debug;
+		};
+		905EB4AE2DE667C600E2335F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F97HAPK5UH;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.CounterStrikeTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CounterStrikeTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		905EB4762DE667C400E2335F /* Build configuration list for PBXProject "CounterStrikeTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905EB4A72DE667C600E2335F /* Debug */,
+				905EB4A82DE667C600E2335F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905EB4A42DE667C600E2335F /* Build configuration list for PBXNativeTarget "CounterStrikeTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905EB4A52DE667C600E2335F /* Debug */,
+				905EB4A62DE667C600E2335F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905EB4A92DE667C600E2335F /* Build configuration list for PBXNativeTarget "CounterStrikeTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905EB4AA2DE667C600E2335F /* Debug */,
+				905EB4AB2DE667C600E2335F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		905EB4AC2DE667C600E2335F /* Build configuration list for PBXNativeTarget "CounterStrikeTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				905EB4AD2DE667C600E2335F /* Debug */,
+				905EB4AE2DE667C600E2335F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90EA9F9B2DE87713002AF1CC /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		905EB4B72DE6728E00E2335F /* CounterStrikeTVUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CounterStrikeTVUI;
+		};
+		90ACE8D62E2D23D400A95093 /* CounterStrikeTVService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CounterStrikeTVService;
+		};
+		90EA9F9C2DE87713002AF1CC /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90EA9F9B2DE87713002AF1CC /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		90EE761B2E2D20280096AAE7 /* CounterStrikeTVDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CounterStrikeTVDomain;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 905EB4732DE667C400E2335F /* Project object */;
+}
