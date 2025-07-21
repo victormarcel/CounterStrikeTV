@@ -9,4 +9,5 @@ public enum NetworkingOperationsError: Error {
     
     case parseError(Error?)
     case invalidUrl
+    case dataNotFound
 }

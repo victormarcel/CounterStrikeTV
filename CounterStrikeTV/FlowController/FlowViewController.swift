@@ -14,6 +14,16 @@ import SwiftUI
 @MainActor
 final class FlowViewController {
     
+    // MARK: - CONSTANTS
+    
+    private enum Constants {
+        
+        enum NavigationBar {
+            static let font: UIFont = .systemFont(ofSize: 14, weight: .bold)
+            static let backButtonImageName = "ic-arrow-left"
+        }
+    }
+    
     // MARK: - PRIVATE PROPERTIES
     
     private let factory: ScreenFactory
@@ -47,14 +57,18 @@ final class FlowViewController {
         
         navigationBar.prefersLargeTitles = true
         navigationBar.barTintColor = .appColor(.blue500)
-        navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.white,
+            NSAttributedString.Key.font: Constants.NavigationBar.font
+        ]
         navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        
     }
     
     // MARK: - INTERNAL METHODS
     
-    func navigateToMatchView() {
-        let matchView = factory.makeMatchView()
+    func navigateToMatchView(match: Match) {
+        let matchView = factory.makeMatchView(match: match)
         navigateTo(view: matchView)
     }
     
@@ -63,6 +77,16 @@ final class FlowViewController {
     private func navigateTo(view: some View) {
         let viewController = view.wrappedByHostingController
         viewController.navigationItem.largeTitleDisplayMode = .never
+        
+        let yourBackImage = UIImage(named: Constants.NavigationBar.backButtonImageName)
+        
+        navigationController?.navigationBar.backIndicatorImage = yourBackImage
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
+        navigationController?.navigationBar.backItem?.backButtonTitle = ""
+        
+//        UINavigationBar.appearance().backIndicatorImage = yourBackImage
+//        UINavigationBar.appearance().backIndicatorTransitionMaskImage = yourBackImage
+        
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

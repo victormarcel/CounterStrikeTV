@@ -16,7 +16,8 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "CounterStrikeTVUI"
+            name: "CounterStrikeTVUI",
+            dependencies: ["CounterStrikeTVDomain"]
         ),
 //        .testTarget(
 //            name: "CounterStrikeTVUITests",

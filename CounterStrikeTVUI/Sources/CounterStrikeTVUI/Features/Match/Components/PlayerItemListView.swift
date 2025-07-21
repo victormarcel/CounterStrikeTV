@@ -5,33 +5,36 @@
 //  Created by Victor Marcel on 18/07/25.
 //
 
+import CounterStrikeTVDomain
 import SwiftUI
 
 struct PlayerItemListView: View {
     
-    enum ImagePosition {
+    // MARK: - CONSTANTS
 
-        case leading
-        case trailing
+    private enum Constants {
         
-        var edge: Edge.Set {
-            switch self {
-            case .leading:
-                return .leading
-            case .trailing:
-                return .trailing
-            }
+        enum HStack {
+            static let contentPadding: CGFloat = 12
         }
         
-        var oppositeEdge: Edge.Set {
-            switch self {
-            case .leading:
-                return .trailing
-            case .trailing:
-                return .leading
-            }
+        enum Background {
+            static let cornerRadius: CGFloat = 16
+            static let height: CGFloat = 54
+        }
+        
+        enum Info {
+            static let nicknameFontSize: CGFloat = 14
+            static let nameFontSize: CGFloat = 12
+        }
+        
+        enum Image {
+            static let size: CGFloat = 49
+            static let cornerRadius: CGFloat = 8
         }
     }
+    
+    // MARK: - PRIVATE PROPERTIES
     
     private var infoViewAlignment: HorizontalAlignment {
         switch imagePosition {
@@ -69,8 +72,15 @@ struct PlayerItemListView: View {
         }
     }
     
+    // MARK: - PRIVATE PROPERTIES
+    
+    private var playerRealName: String {
+        [player.firstName ?? .empty, player.lastName ?? .empty].joined(separator: " ")
+    }
+    
     // MARK: - INTERNAL PROPERTIES
     
+    var player: Player
     var imagePosition: ImagePosition
     
     // MARK: - UI
@@ -91,53 +101,37 @@ struct PlayerItemListView: View {
                 }
             }
             .offset(y: -Metrics.Spacing.sm)
-            .padding(contentPaddingEdge, 12)
+            .padding(contentPaddingEdge, Constants.HStack.contentPadding)
         }
-        
-//        ZStack(alignment: zStackAlignment) {
-//            playerInfoView
-//                .padding(imageAlignment.oppositeEdge, Metrics.Spacing.md)
-//                .padding(imageAlignment.edge, 77)
-//                .padding(.top, Metrics.Spacing.md)
-//                .padding(.bottom, Metrics.Spacing.sm)
-//                .background(Color.appColor(.blue300))
-//                .roundedCorners(16, corners: playerInfoViewRoundedCorners)
-//            
-//            imageView
-//                .padding(imageAlignment.edge, 12)
-//                .offset(y: -Metrics.Spacing.sm)
-//        }
     }
     
     @ViewBuilder
     private var backgroundView: some View {
         Color.appColor(.blue300)
-            .roundedCorners(16, corners: backgroundRoundedCorners)
-            .frame(height: 54)
+            .roundedCorners(Constants.Background.cornerRadius, corners: backgroundRoundedCorners)
+            .frame(height: Constants.Background.height)
     }
     
     @ViewBuilder
     private var infoView: some View {
         VStack(alignment: infoViewAlignment, spacing: Metrics.Spacing.none) {
-            Text("Nickname")
-                .textStyle(fontSize: 14, color: .white)
+            Text(player.name)
+                .textStyle(fontSize: Constants.Info.nicknameFontSize, color: .white)
                 .bold()
             
-            Text("Nome de Jogador")
-                .textStyle(fontSize: 12, color: .appColor(.purple200))
+            Text(playerRealName)
+                .textStyle(fontSize: Constants.Info.nameFontSize, color: .appColor(.purple200))
         }
     }
     
     @ViewBuilder
     var imageView: some View {
-        WebImageView(url: "https://cdn.pandascore.co/images/player/image/21846/izaa_santos.png", contentMode: .fill)
-            .frame(width: 49, height: 49)
-            .roundedCorners(8)
+        WebImageView(
+            url: player.imageUrl ?? "ests",
+            placeholder: Image(AppImage.playerPlaceholder.rawValue, bundle: .module),
+            contentMode: .fill
+        )
+            .frame(width: Constants.Image.size, height: Constants.Image.size)
+            .roundedCorners(Constants.Image.cornerRadius)
     }
-}
-
-// MARK: - PREVIEW
-
-#Preview {
-    PlayerItemListView(imagePosition: .leading)
 }

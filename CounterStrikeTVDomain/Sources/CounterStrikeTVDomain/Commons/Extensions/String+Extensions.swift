@@ -14,4 +14,18 @@ public extension String {
     static var empty: String {
         return ""
     }
+    
+    // MARK: - PUBLIC METHODS
+    
+    func localizedBy(bundle: Bundle) -> String {
+        String(localized: .init(self), bundle: bundle)
+    }
+    
+    func dateBy(format: Date.Format) -> Date? {
+        let formatter = DateFormatter()
+        formatter.locale = .current
+        formatter.dateFormat = format.rawValue
+        
+        return formatter.date(from: self)
+    }
 }

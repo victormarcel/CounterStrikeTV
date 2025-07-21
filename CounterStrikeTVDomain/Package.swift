@@ -9,7 +9,8 @@ let package = Package(
     products: [
         .library(
             name: "CounterStrikeTVDomain",
-            targets: ["CounterStrikeTVDomain"]),
+            targets: ["CounterStrikeTVDomain"]
+        ),
     ],
     targets: [
         .target(

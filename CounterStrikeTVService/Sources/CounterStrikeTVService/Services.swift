@@ -25,4 +25,17 @@ public final class Services: ServicesProtocol {
         let httpRequest = HttpRequest.fetchMatches(data)
         return try await networkingOperations.fetch(request: httpRequest)
     }
+    
+    public func fetchTeam(data: TeamRequestData) async throws -> Team {
+        let httpRequest = HttpRequest.fetchTeam(data)
+        do {
+            let response: [Team] = try await networkingOperations.fetch(request: httpRequest)
+            guard let team = response.first else {
+                throw NetworkingOperationsError.dataNotFound
+            }
+            return team
+        } catch let error {
+            throw error
+        }
+    }
 }

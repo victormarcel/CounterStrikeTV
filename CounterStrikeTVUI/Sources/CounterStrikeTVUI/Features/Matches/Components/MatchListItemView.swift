@@ -17,14 +17,35 @@ struct MatchListItemView: View {
         enum MainStack {
             static let spacing: CGFloat = 18.5
         }
+        
+        enum Time {
+            static let fontSize: CGFloat = 8
+            static let size: CGSize = .init(width: 43, height: 25)
+        }
+        
+        enum LeagueAndSerie {
+            static let fontSize: CGFloat = 8
+            static let verticalPadding: CGFloat = 8
+            static let leadingPadding: CGFloat = 16
+        }
     }
     
-    // MARK: - PRIVATE PROPERTIES
+    // MARK: - INTERNAL PROPERTIES
     
     let match: Match
     
+    // MARK: - PRIVATE PROPERTIES
+    
     private var opponents: [Team] {
         match.opponents.compactMap { $0.opponent }
+    }
+    
+    private var tagColor: Color {
+        match.status == .running ? .appColor(.red500) : .appColor(.gray400)
+    }
+    
+    private var tagText: String {
+        return match.status == .running ? "now".localizedBy(bundle: .module).uppercased() : match.beginAtDescription
     }
     
     // MARK: - UI
@@ -35,42 +56,55 @@ struct MatchListItemView: View {
             
             MatchOpponentsView(opponents: opponents)
             
-            leagueSerieStackView
+            leagueAndSerieStackView
         }
         .background(Color.appColor(.blue300))
         .roundedCorners(Constants.defaultViewCornerRadius)
     }
     
     @ViewBuilder
-    var matchTimeView: some View {
+    private var matchTimeView: some View {
         HStack() {
             Spacer()
             
-            Rectangle()
-                .fill(.red)
-                .frame(width: 43, height: 25)
+            Text(tagText)
+                .textStyle(fontSize: Constants.Time.fontSize, color: .white)
+                .padding(Metrics.Spacing.sm)
+                .fontWeight(.black)
+                .background(tagColor)
                 .roundedCorners(Constants.defaultViewCornerRadius, corners: [.topRight, .bottomLeft])
         }
     }
     
     @ViewBuilder
-    var leagueSerieStackView: some View {
+    private var leagueAndSerieStackView: some View {
         VStack(spacing: Metrics.Spacing.none) {
             Divider()
                 .background(.white)
             
-            HStack(spacing: Metrics.Spacing.md) {
-                WebImageView(url: "https://cdn.pandascore.co/images/league/image/5373/555px-mesa_asian_masters_2025_lightmode-png")
-                    .frame(width: Metrics.Size.sm, height: Metrics.Size.sm)
+            HStack(spacing: Metrics.Spacing.sm) {
+                leagueIconView
                 
-                Text("League + serie")
+                Text(match.description)
                     .foregroundStyle(.white)
-                    .textStyle(fontSize: 8, color: .white)
+                    .textStyle(fontSize: Constants.LeagueAndSerie.fontSize, color: .white)
                 
                 Spacer()
             }
-            .padding(.vertical, 8)
-            .padding(.leading, 16)
+            .padding(.vertical, Constants.LeagueAndSerie.verticalPadding)
+            .padding(.leading, Constants.LeagueAndSerie.leadingPadding)
+        }
+    }
+    
+    @ViewBuilder
+    private var leagueIconView: some View {
+        if let leagueImageUrl = match.league.imageUrl {
+            WebImageView(url: leagueImageUrl)
+                .frame(width: Metrics.Size.sm, height: Metrics.Size.sm)
+        } else {
+            Image.icon(.trophy)
+                .resizable()
+                .frame(width: Metrics.Size.sm, height: Metrics.Size.sm)
         }
     }
 }

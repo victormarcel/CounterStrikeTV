@@ -16,10 +16,12 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "CounterStrikeTVService"),
-        .testTarget(
-            name: "CounterStrikeTVServiceTests",
-            dependencies: ["CounterStrikeTVService"]
+            name: "CounterStrikeTVService",
+            dependencies: ["CounterStrikeTVDomain"]
         ),
+//        .testTarget(
+//            name: "CounterStrikeTVServiceTests",
+//            dependencies: ["CounterStrikeTVService"]
+//        ),
     ]
 )

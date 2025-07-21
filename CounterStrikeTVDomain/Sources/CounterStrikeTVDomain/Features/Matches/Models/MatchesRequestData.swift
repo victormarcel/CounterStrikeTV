@@ -13,7 +13,6 @@ public struct MatchesRequestData: ServiceRequestDataProtocol {
     
     private enum Constants {
         
-        static let one: Int = 1
         static let comma = ","
         static let defaultPageSize: Int = 10
         
@@ -46,15 +45,19 @@ public struct MatchesRequestData: ServiceRequestDataProtocol {
     }
     
     private var rangeByBeginDateParameterValue: String {
-        guard let yesterdayDate = Date.now.subtract(days: Constants.one)?.dateStringBy(format: .utc),
-              let oneYearLaterDate = Date.now.add(years: Constants.one)?.dateStringBy(format: .utc) else {
+        guard let yesterdayDate = Date.now.subtract(days: Numbers.one)?.dateStringBy(format: .utc),
+              let oneYearLaterDate = Date.now.add(years: Numbers.one)?.dateStringBy(format: .utc) else {
             return .empty
         }
         return [yesterdayDate, oneYearLaterDate].joined(separator: Constants.comma)
     }
     
     private var pageParameter: RequestParameter {
-        (key: PandaScoreConstants.Parameter.page, value: page)
+        let key = buildArrayFormatParameter(
+            key: PandaScoreConstants.Parameter.page,
+            value: PandaScoreConstants.Parameter.number
+        )
+        return (key: key, value: page)
     }
     
     private var runningAndNotEndedMatchesParameter: RequestParameter {
@@ -71,10 +74,6 @@ public struct MatchesRequestData: ServiceRequestDataProtocol {
             value: PandaScoreConstants.Parameter.size
         )
         return (key: key, value: Constants.defaultPageSize)
-    }
-    
-    private var authorizationHeaderValue: String {
-        "\(Constants.Header.bearer) \(ServiceCredentials().pandaScoreApiKey)"
     }
     
     // MARK: - PRIVATE METHODS
@@ -100,6 +99,6 @@ public struct MatchesRequestData: ServiceRequestDataProtocol {
     }
     
     public func buildHeaders() -> [String: String]? {
-        [Constants.Header.authorization: authorizationHeaderValue]
+        [Constants.Header.authorization: ServiceCredentials().pandaScoreApiAuthorization]
     }
 }

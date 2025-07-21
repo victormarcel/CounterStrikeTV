@@ -7,19 +7,21 @@
 
 import SwiftUI
 
-//extension WebImageView {
-//    func contentMode(_ contentMode: ContentMode) -> Self {
-//        self.contentMode = contentMode
-//        return self
-//    }
-//}
-
 struct WebImageView: View {
     
     // MARK: - INTERNAL PROPERTIES
     
     let url: String
-    var contentMode: ContentMode = .fit
+    let placeholder: Image?
+    var contentMode: ContentMode
+    
+    // MARK: - INITIALIZER
+    
+    init(url: String, placeholder: Image? = nil, contentMode: ContentMode = .fit) {
+        self.url = url
+        self.placeholder = placeholder
+        self.contentMode = contentMode
+    }
     
     // MARK: - UI
     
@@ -31,17 +33,17 @@ struct WebImageView: View {
                         .resizable()
                         .aspectRatio(contentMode: contentMode)
                 } else if phase.error != nil {
-                    errorView
+                    if let placeholder {
+                        placeholder
+                            .resizable()
+                    } else {
+                        Color.gray
+                    }
                 } else {
                     loadingView
                 }
             }
         }
-    }
-    
-    @ViewBuilder
-    var errorView: some View {
-        Color.gray
     }
     
     @ViewBuilder

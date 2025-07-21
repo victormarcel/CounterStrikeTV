@@ -11,7 +11,7 @@ import Foundation
 
 extension FlowViewController: MatchesViewDelegate {
     
-    func matchesView(_ view: MatchesView) {
-        navigateToMatchView()
+    func matchesView(_ view: MatchesView, didTap match: Match) {
+        navigateToMatchView(match: match)
     }
 }

@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		905EB4B82DE6728E00E2335F /* CounterStrikeTVUI in Frameworks */ = {isa = PBXBuildFile; productRef = 905EB4B72DE6728E00E2335F /* CounterStrikeTVUI */; };
-		90ACE8D72E2D23D400A95093 /* CounterStrikeTVService in Frameworks */ = {isa = PBXBuildFile; productRef = 90ACE8D62E2D23D400A95093 /* CounterStrikeTVService */; };
-		90EA9F9D2DE87713002AF1CC /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 90EA9F9C2DE87713002AF1CC /* Swinject */; };
-		90EE761C2E2D20280096AAE7 /* CounterStrikeTVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 90EE761B2E2D20280096AAE7 /* CounterStrikeTVDomain */; };
+		901548992E2D4AA10046E0E8 /* CounterStrikeTVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 901548982E2D4AA10046E0E8 /* CounterStrikeTVDomain */; };
+		9015489B2E2D4AAE0046E0E8 /* CounterStrikeTVService in Frameworks */ = {isa = PBXBuildFile; productRef = 9015489A2E2D4AAE0046E0E8 /* CounterStrikeTVService */; };
+		9015489D2E2D4AB30046E0E8 /* CounterStrikeTVUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9015489C2E2D4AB30046E0E8 /* CounterStrikeTVUI */; };
+		9066E4582E2D485600C9565D /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 9066E4572E2D485600C9565D /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		901548952E2D4A540046E0E8 /* CounterStrikeTVDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterStrikeTVDomain; sourceTree = "<group>"; };
+		901548962E2D4A5F0046E0E8 /* CounterStrikeTVService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterStrikeTVService; sourceTree = "<group>"; };
+		901548972E2D4A650046E0E8 /* CounterStrikeTVUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterStrikeTVUI; sourceTree = "<group>"; };
 		905EB47B2DE667C400E2335F /* CounterStrikeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CounterStrikeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		905EB4912DE667C500E2335F /* CounterStrikeTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterStrikeTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		905EB49B2DE667C500E2335F /* CounterStrikeTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterStrikeTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		905EB4B32DE671C700E2335F /* CounterStrikeTVService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterStrikeTVService; sourceTree = "<group>"; };
-		905EB4B62DE6726200E2335F /* CounterStrikeTVUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterStrikeTVUI; sourceTree = "<group>"; };
-		908C914A2DE67F89003DE99C /* CounterStrikeTVDomain */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CounterStrikeTVDomain; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -75,10 +75,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				905EB4B82DE6728E00E2335F /* CounterStrikeTVUI in Frameworks */,
-				90EE761C2E2D20280096AAE7 /* CounterStrikeTVDomain in Frameworks */,
-				90EA9F9D2DE87713002AF1CC /* Swinject in Frameworks */,
-				90ACE8D72E2D23D400A95093 /* CounterStrikeTVService in Frameworks */,
+				9066E4582E2D485600C9565D /* Swinject in Frameworks */,
+				901548992E2D4AA10046E0E8 /* CounterStrikeTVDomain in Frameworks */,
+				9015489B2E2D4AAE0046E0E8 /* CounterStrikeTVService in Frameworks */,
+				9015489D2E2D4AB30046E0E8 /* CounterStrikeTVUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,9 +102,9 @@
 		905EB4722DE667C400E2335F = {
 			isa = PBXGroup;
 			children = (
-				908C914A2DE67F89003DE99C /* CounterStrikeTVDomain */,
-				905EB4B62DE6726200E2335F /* CounterStrikeTVUI */,
-				905EB4B32DE671C700E2335F /* CounterStrikeTVService */,
+				901548972E2D4A650046E0E8 /* CounterStrikeTVUI */,
+				901548962E2D4A5F0046E0E8 /* CounterStrikeTVService */,
+				901548952E2D4A540046E0E8 /* CounterStrikeTVDomain */,
 				905EB47D2DE667C400E2335F /* CounterStrikeTV */,
 				905EB4942DE667C500E2335F /* CounterStrikeTVTests */,
 				905EB49E2DE667C500E2335F /* CounterStrikeTVUITests */,
@@ -150,10 +150,10 @@
 			);
 			name = CounterStrikeTV;
 			packageProductDependencies = (
-				905EB4B72DE6728E00E2335F /* CounterStrikeTVUI */,
-				90EA9F9C2DE87713002AF1CC /* Swinject */,
-				90EE761B2E2D20280096AAE7 /* CounterStrikeTVDomain */,
-				90ACE8D62E2D23D400A95093 /* CounterStrikeTVService */,
+				9066E4572E2D485600C9565D /* Swinject */,
+				901548982E2D4AA10046E0E8 /* CounterStrikeTVDomain */,
+				9015489A2E2D4AAE0046E0E8 /* CounterStrikeTVService */,
+				9015489C2E2D4AB30046E0E8 /* CounterStrikeTVUI */,
 			);
 			productName = CounterStrikeTV;
 			productReference = 905EB47B2DE667C400E2335F /* CounterStrikeTV.app */;
@@ -239,7 +239,7 @@
 			mainGroup = 905EB4722DE667C400E2335F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				90EA9F9B2DE87713002AF1CC /* XCRemoteSwiftPackageReference "Swinject" */,
+				9066E4562E2D47EA00C9565D /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 905EB47C2DE667C400E2335F /* Products */;
@@ -614,7 +614,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		90EA9F9B2DE87713002AF1CC /* XCRemoteSwiftPackageReference "Swinject" */ = {
+		9066E4562E2D47EA00C9565D /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
 			requirement = {
@@ -625,22 +625,22 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		905EB4B72DE6728E00E2335F /* CounterStrikeTVUI */ = {
+		901548982E2D4AA10046E0E8 /* CounterStrikeTVDomain */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CounterStrikeTVUI;
+			productName = CounterStrikeTVDomain;
 		};
-		90ACE8D62E2D23D400A95093 /* CounterStrikeTVService */ = {
+		9015489A2E2D4AAE0046E0E8 /* CounterStrikeTVService */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CounterStrikeTVService;
 		};
-		90EA9F9C2DE87713002AF1CC /* Swinject */ = {
+		9015489C2E2D4AB30046E0E8 /* CounterStrikeTVUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 90EA9F9B2DE87713002AF1CC /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = Swinject;
+			productName = CounterStrikeTVUI;
 		};
-		90EE761B2E2D20280096AAE7 /* CounterStrikeTVDomain */ = {
+		9066E4572E2D485600C9565D /* Swinject */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = CounterStrikeTVDomain;
+			package = 9066E4562E2D47EA00C9565D /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

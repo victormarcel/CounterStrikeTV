@@ -15,8 +15,4 @@ final class ScreenFactory {
     // MARK: - INTERNAL PROPERTIES
     
     let container = DIContainer.shared.container
-    
-    func makeMatchView() -> MatchView {
-        return MatchView()
-    }
 }

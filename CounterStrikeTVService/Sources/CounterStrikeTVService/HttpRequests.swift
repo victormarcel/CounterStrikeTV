@@ -13,6 +13,7 @@ enum HttpRequest: HttpRequestProtocol {
     // MARK: - CASES
     
     case fetchMatches(MatchesRequestData)
+    case fetchTeam(TeamRequestData)
     
     // MARK: - INTERNAL PROPERTIES
     
@@ -20,6 +21,8 @@ enum HttpRequest: HttpRequestProtocol {
         switch self {
         case .fetchMatches:
             return PandaScoreConstants.Matches.url
+        case .fetchTeam:
+            return PandaScoreConstants.Teams.url
         }
     }
     
@@ -31,6 +34,8 @@ enum HttpRequest: HttpRequestProtocol {
         switch self {
         case .fetchMatches(let requestData):
             return requestData.buildParameters()
+        case .fetchTeam(let requestData):
+            return requestData.buildParameters()
         }
     }
     
@@ -38,12 +43,8 @@ enum HttpRequest: HttpRequestProtocol {
         switch self {
         case .fetchMatches(let requestData):
             return requestData.buildHeaders()
+        case .fetchTeam(let requestData):
+            return requestData.buildHeaders()
         }
     }
-    
-//    var url: String {
-//        return "https://api.pandascore.co/csgo/matches?sort=-status,begin_at&range[begin_at]=2025-07-12T11:00:00Z,2025-12-31T11:00:00Z&page[size]=10&page=1&filter[status]=not_started, running"
-//    }
-    
-   
 }

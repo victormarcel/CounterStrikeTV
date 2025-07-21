@@ -48,7 +48,6 @@ public final class NetworkingOperations: NetworkingOperationsProtocol {
         let url = try buildUrl(requestData: requestData)
         var urlRequest = URLRequest(url: url)
         addRequestHeaders(data: requestData, urlRequest: &urlRequest)
-//        request.setValue("Bearer aFrwSajvnEBCrnpSB89AeyKsE9dv2AGbTnEPPSu0QKVbpyez_aw", forHTTPHeaderField: "Authorization")
         return urlRequest
     }
     

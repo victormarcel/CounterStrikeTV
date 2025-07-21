@@ -28,5 +28,7 @@ public enum PandaScoreConstants {
         public static let filter = "filter"
         public static let page = "page"
         public static let size = "size"
+        public static let number = "number"
+        public static let id = "id"
     }
 }

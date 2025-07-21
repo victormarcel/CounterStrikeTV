@@ -23,7 +23,7 @@ struct TeamIconAndTextView: View {
         }
         
         enum Text {
-            static let size: CGFloat = 10
+            static let fontSize: CGFloat = 10
         }
     }
     
@@ -38,14 +38,28 @@ struct TeamIconAndTextView: View {
             buildIcon()
             
             Text(team.name)
-                .font(.system(size: Constants.Text.size))
+                .font(.system(size: Constants.Text.fontSize))
                 .foregroundStyle(.white)
+                .frame(maxWidth: Constants.Icon.size)
+                .multilineTextAlignment(.center)
         }
     }
     
     @ViewBuilder
     private func buildIcon() -> some View {
-        WebImageView(url: team.imageUrl ?? "tste")
+        if let url = team.imageUrl {
+            WebImageView(url: url)
+                .frame(width: Constants.Icon.size, height: Constants.Icon.size)
+        } else {
+            placeholderTeamView
+        }
+    }
+    
+    @ViewBuilder
+    private var placeholderTeamView: some View {
+        Image.icon(.shield)
+            .resizable()
             .frame(width: Constants.Icon.size, height: Constants.Icon.size)
+        
     }
 }

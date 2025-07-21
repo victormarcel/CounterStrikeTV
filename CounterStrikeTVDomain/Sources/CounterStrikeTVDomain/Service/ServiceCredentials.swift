@@ -12,21 +12,32 @@ final class ServiceCredentials {
     // MARK: - CONSTANTS
     
     private enum Constants {
+        
         static let credentialsFileName = "Config"
         static let jsonExtension = "json"
+        
+        enum Header {
+            static let bearer = "Bearer"
+        }
     }
     
-    // MARK: - STRUCT
+    // MARK: - STRUCT's
     
     private struct CredentialsData: Codable {
         let pandaScoreApiKey: String
+    }
+    
+    // MARK: - INTERNAL PROPERTIES
+    
+    var pandaScoreApiAuthorization: String {
+        "\(Constants.Header.bearer) \(pandaScoreApiKey)"
     }
     
     // MARK: - PRIVATE PROPERTIES
     
     private var credentiaslData: CredentialsData?
     
-    public var pandaScoreApiKey: String {
+    private var pandaScoreApiKey: String {
         return credentiaslData?.pandaScoreApiKey ?? .empty
     }
     

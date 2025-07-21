@@ -1,19 +1,63 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "matches_page_title" : {
+    "matches" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "partidas"
+          }
+        }
+      }
+    },
+    "matches_error_feedback_text" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Matches"
+            "value" : "Failed to fetch matches, try again!"
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Partidas"
+            "value" : "Erro ao buscar partidas, tente novamente!"
+          }
+        }
+      }
+    },
+    "now" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "agora"
+          }
+        }
+      }
+    },
+    "ongoing" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "em andamento"
+          }
+        }
+      }
+    },
+    "reload" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "recarregar"
           }
         }
       }

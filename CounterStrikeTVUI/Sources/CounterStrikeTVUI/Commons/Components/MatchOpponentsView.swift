@@ -25,6 +25,10 @@ struct MatchOpponentsView: View {
             static let text = "vs"
             static let color = Color.white.opacity(0.5)
         }
+        
+        enum Icon {
+            static let size: CGFloat = 60
+        }
     }
     
     // MARK: - PRIVATE PROPERTIES
@@ -35,30 +39,28 @@ struct MatchOpponentsView: View {
     
     var body: some View {
         HStack(spacing: Constants.MainStack.spacing)  {
-            buildTeamView(index: Constants.firstTeamIndex)
+            buildTeamView(team: opponents.first)
             
             Text(Constants.MiddleSymbol.text)
                 .foregroundStyle(Constants.MiddleSymbol.color)
             
-            buildTeamView(index: Constants.secondTeamIndex)
+            buildTeamView(team: opponents.last)
         }
     }
     
-    private func buildTeamView(index: Int) -> AnyView {
-        guard let team = getTeamBy(index: index) else {
-            return AnyView(EmptyView())
+    private func buildTeamView(team: Team?) -> some View {
+        guard let team else {
+            return AnyView(placeholderTeamView)
         }
         
         return AnyView(TeamIconAndTextView(team: team))
     }
     
-    // MARK: - PRIVATE METHODS
-    
-    private func getTeamBy(index: Int) -> Team? {
-        guard .zero..<opponents.count ~= index else {
-            return nil
-        }
-    
-        return opponents[index]
+    @ViewBuilder
+    private var placeholderTeamView: some View {
+        Image.icon(.shield)
+            .resizable()
+            .frame(width: Constants.Icon.size, height: Constants.Icon.size)
+        
     }
 }

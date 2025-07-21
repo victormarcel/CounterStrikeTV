@@ -11,4 +11,8 @@ public enum AppColor: String {
     case blue300
     
     case purple200
+    
+    case red500
+    
+    case gray400
 }
