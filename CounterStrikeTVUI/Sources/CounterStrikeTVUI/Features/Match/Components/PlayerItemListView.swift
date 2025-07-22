@@ -11,7 +11,7 @@ import SwiftUI
 struct PlayerItemListView: View {
     
     // MARK: - CONSTANTS
-
+    
     private enum Constants {
         
         enum HStack {
@@ -127,11 +127,11 @@ struct PlayerItemListView: View {
     @ViewBuilder
     var imageView: some View {
         WebImageView(
-            url: player.imageUrl ?? "ests",
-            placeholder: Image(AppImage.playerPlaceholder.rawValue, bundle: .module),
+            url: player.imageUrl ?? .empty,
+            placeholder: Image.icon(.playerPlaceholder),
             contentMode: .fill
         )
-            .frame(width: Constants.Image.size, height: Constants.Image.size)
-            .roundedCorners(Constants.Image.cornerRadius)
+        .frame(width: Constants.Image.size, height: Constants.Image.size)
+        .roundedCorners(Constants.Image.cornerRadius)
     }
 }

@@ -83,10 +83,7 @@ final class FlowViewController {
         navigationController?.navigationBar.backIndicatorImage = yourBackImage
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
         navigationController?.navigationBar.backItem?.backButtonTitle = ""
-        
-//        UINavigationBar.appearance().backIndicatorImage = yourBackImage
-//        UINavigationBar.appearance().backIndicatorTransitionMaskImage = yourBackImage
-        
+
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

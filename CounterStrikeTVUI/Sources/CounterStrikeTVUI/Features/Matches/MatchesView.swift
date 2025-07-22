@@ -25,6 +25,7 @@ public struct MatchesView: View {
     private enum Constants {
         
         static let pageTitle = "matches".localizedBy(bundle: .module).capitalized
+        static let titleScrollBackTime = DispatchTimeInterval.milliseconds(700)
     }
     
     // MARK: - PRIVATE PROPERTIES
@@ -101,12 +102,7 @@ public struct MatchesView: View {
             .scrollIndicators(.hidden)
             .padding(.horizontal, Metrics.Spacing.lg)
             .refreshable {
-                viewModel.matches = []
-                DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(700)) {
-                    Task {
-                        await viewModel.fetchFirstPage()
-                    }
-                }
+                handleRefreshableAction()
             }
         }
     }
@@ -122,6 +118,15 @@ public struct MatchesView: View {
     }
     
     // MARK: - PRIVATE METHODS
+    
+    private func handleRefreshableAction() {
+        viewModel.matches = []
+        DispatchQueue.main.asyncAfter(deadline: .now() + Constants.titleScrollBackTime) {
+            Task {
+                await viewModel.fetchFirstPage()
+            }
+        }
+    }
     
     private func handleViewState(_ state: MatchesViewState) {
         switch state {

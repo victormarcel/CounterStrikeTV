@@ -69,6 +69,7 @@ public extension Date {
     private func buildDateFormatterBy(_ format: Format) -> DateFormatter {
         let dateFormatter = DateFormatter()
         dateFormatter.locale = .current
+        dateFormatter.timeZone = .current
         dateFormatter.dateFormat = format.rawValue
         return dateFormatter
     }

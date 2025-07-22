@@ -12,6 +12,12 @@ import Foundation
 @MainActor
 public class MatchesViewModel: ObservableObject {
     
+    // MARK: - CONSTANTS
+    
+    private enum Constants {
+        static let validNumberOfOpponents: Int = 2
+    }
+    
     // MARK: - ENUM'S
     
     enum MatchesViewState {
@@ -58,7 +64,7 @@ public class MatchesViewModel: ObservableObject {
             let matches = try await fetchMatches()
             
             self.matches = matches
-            nextMatchesPage = Numbers.two
+            nextMatchesPage = buildNextMatchesPage()
             
             matchesServicePassthrough.send(.firstPageState(.success(())))
         } catch {
@@ -100,7 +106,7 @@ public class MatchesViewModel: ObservableObject {
     }
     
     private func handleMatchesResponse(_ response: [Match]) -> [Match] {
-        return response.filter { !$0.opponents.isEmpty }
+        return response.filter { $0.opponents.count == Constants.validNumberOfOpponents }
     }
     
     private func buildNextMatchesPage() -> Int? {

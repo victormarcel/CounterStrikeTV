@@ -47,19 +47,7 @@ struct TeamIconAndTextView: View {
     
     @ViewBuilder
     private func buildIcon() -> some View {
-        if let url = team.imageUrl {
-            WebImageView(url: url)
-                .frame(width: Constants.Icon.size, height: Constants.Icon.size)
-        } else {
-            placeholderTeamView
-        }
-    }
-    
-    @ViewBuilder
-    private var placeholderTeamView: some View {
-        Image.icon(.shield)
-            .resizable()
+        WebImageView(url: team.imageUrl ?? .empty, placeholder: Image.icon(.shield))
             .frame(width: Constants.Icon.size, height: Constants.Icon.size)
-        
     }
 }

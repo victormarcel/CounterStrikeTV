@@ -98,13 +98,7 @@ struct MatchListItemView: View {
     
     @ViewBuilder
     private var leagueIconView: some View {
-        if let leagueImageUrl = match.league.imageUrl {
-            WebImageView(url: leagueImageUrl)
-                .frame(width: Metrics.Size.sm, height: Metrics.Size.sm)
-        } else {
-            Image.icon(.trophy)
-                .resizable()
-                .frame(width: Metrics.Size.sm, height: Metrics.Size.sm)
-        }
+        WebImageView(url: match.league.imageUrl ?? .empty, placeholder: Image.icon(.trophy))
+            .frame(width: Metrics.Size.sm, height: Metrics.Size.sm)
     }
 }
