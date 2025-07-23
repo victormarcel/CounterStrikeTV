@@ -61,6 +61,23 @@
           }
         }
       }
+    },
+    "team_placeholder_text" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To be defined"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A definir"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

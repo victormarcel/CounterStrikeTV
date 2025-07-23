@@ -13,7 +13,7 @@ public final class Services: ServicesProtocol {
     // MARK: - CONSTANTS
     
     private enum Constants {
-        static let indexToSplitMatchesToCache: Int = 4
+        static let indexToSplitMatchesToCache: Int = 3
     }
     
     // MARK: - PRIVATE PROPERTIES
@@ -63,7 +63,7 @@ public final class Services: ServicesProtocol {
     
     private func handleMatchesCacheImage(_ matches: [Match]) async {
         let firstMatchesToCache = Array(matches.prefix(Constants.indexToSplitMatchesToCache))
-        let secondMatchesToCache = Array(matches.suffix(from: Constants.indexToSplitMatchesToCache))
+        let secondMatchesToCache = Array(matches.safeSuffix(from: Constants.indexToSplitMatchesToCache))
         
         await cacheMatchesImage(firstMatchesToCache)
         Task {

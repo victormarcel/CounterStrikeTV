@@ -18,7 +18,10 @@ let package = Package(
         ),
         .testTarget(
             name: "CounterStrikeTVDomainTests",
-            dependencies: ["CounterStrikeTVDomain"]
+            dependencies: ["CounterStrikeTVDomain"],
+            resources: [
+                .process("Resources")
+            ]
         ),
     ]
 )

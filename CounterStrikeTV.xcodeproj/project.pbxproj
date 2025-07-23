@@ -234,7 +234,7 @@
 			knownRegions = (
 				en,
 				Base,
-				"pt-PT",
+				"pt-BR",
 			);
 			mainGroup = 905EB4722DE667C400E2335F;
 			minimizedProjectReferenceProxies = 1;
@@ -318,13 +318,15 @@
 		905EB4A52DE667C600E2335F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F97HAPK5UH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterStrikeTV/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Counter Strike TV";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,13 +351,15 @@
 		905EB4A62DE667C600E2335F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "";
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = F97HAPK5UH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CounterStrikeTV/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Counter Strike TV";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

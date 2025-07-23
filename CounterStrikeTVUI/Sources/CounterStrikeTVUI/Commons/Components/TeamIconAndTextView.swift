@@ -24,12 +24,13 @@ struct TeamIconAndTextView: View {
         
         enum Text {
             static let fontSize: CGFloat = 10
+            static let placeholder = "team_placeholder_text".localizedBy(bundle: .module)
         }
     }
     
     // MARK: - PRIVATE PROPERTIES
     
-    let team: Team
+    let team: Team?
     
     // MARK: - UI
     
@@ -37,7 +38,7 @@ struct TeamIconAndTextView: View {
         VStack(spacing: Constants.MainStack.spacing) {
             buildIcon()
             
-            Text(team.name)
+            Text(team?.name ?? Constants.Text.placeholder)
                 .font(.system(size: Constants.Text.fontSize))
                 .foregroundStyle(.white)
                 .frame(maxWidth: Constants.Icon.size)
@@ -47,7 +48,7 @@ struct TeamIconAndTextView: View {
     
     @ViewBuilder
     private func buildIcon() -> some View {
-        WebImageView(url: team.imageUrl ?? .empty, placeholder: Image.icon(.shield))
+        WebImageView(url: team?.imageUrl ?? .empty, placeholder: Image.icon(.shield))
             .frame(width: Constants.Icon.size, height: Constants.Icon.size)
     }
 }

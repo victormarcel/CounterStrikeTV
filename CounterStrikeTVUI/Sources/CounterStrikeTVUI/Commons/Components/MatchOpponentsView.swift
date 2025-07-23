@@ -39,28 +39,12 @@ struct MatchOpponentsView: View {
     
     var body: some View {
         HStack(spacing: Constants.MainStack.spacing)  {
-            buildTeamView(team: opponents.first)
+            TeamIconAndTextView(team: opponents[safe: Constants.firstTeamIndex])
             
             Text(Constants.MiddleSymbol.text)
                 .foregroundStyle(Constants.MiddleSymbol.color)
             
-            buildTeamView(team: opponents.last)
+            TeamIconAndTextView(team: opponents[safe: Constants.secondTeamIndex])
         }
-    }
-    
-    private func buildTeamView(team: Team?) -> some View {
-        guard let team else {
-            return AnyView(placeholderTeamView)
-        }
-        
-        return AnyView(TeamIconAndTextView(team: team))
-    }
-    
-    @ViewBuilder
-    private var placeholderTeamView: some View {
-        Image.icon(.shield)
-            .resizable()
-            .frame(width: Constants.Icon.size, height: Constants.Icon.size)
-        
     }
 }

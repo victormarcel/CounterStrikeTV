@@ -14,13 +14,16 @@ public struct MatchView: View {
     
     private enum Constants {
         
+        static let firstTeamIndex: Int = .zero
+        static let secondTeamIndex: Int = 1
+        
         enum MainStack {
             static let spacing: CGFloat = 20
         }
         
         enum DateTime {
             static let size: CGFloat = 12
-            static let ongoingText = "ongoing".localizedBy(bundle: .module).uppercased()
+            static let ongoingText = "ongoing".localizedBy(bundle: .module).capitalized
         }
     }
     
@@ -38,6 +41,14 @@ public struct MatchView: View {
     
     private var timeText: String {
         return match.status == .running ? Constants.DateTime.ongoingText : match.beginAtDescription
+    }
+    
+    private var firstOpponent: Team? {
+        return opponents[safe: Constants.firstTeamIndex]
+    }
+    
+    private var secondOpponent: Team? {
+        return opponents[safe: Constants.secondTeamIndex]
     }
     
     @State private var isLoading = false
@@ -89,21 +100,34 @@ public struct MatchView: View {
     
     @ViewBuilder
     private var playersListView: some View {
-        if let firstOpponent = opponents.first,
-           let secondOpponent = opponents.last {
-            HStack(spacing: Metrics.Spacing.md) {
-                VStack(spacing: Metrics.Spacing.md) {
-                    ForEach(firstOpponent.players ?? [], id: \.id) { player in
-                        PlayerItemListView(player: player, imagePosition: .trailing)
+        if let firstOpponent {
+            GeometryReader { proxy in
+                HStack(alignment: .top, spacing: Metrics.Spacing.md) {
+                    VStack(spacing: Metrics.Spacing.md) {
+                        ForEach(firstOpponent.players ?? [], id: \.id) { player in
+                            PlayerItemListView(player: player, imagePosition: .trailing)
+                        }
+                    }.if(secondOpponent == nil || secondOpponent?.players?.isEmpty ?? true) { content in
+                        content
+                            .padding(.trailing, proxy.size.width/CGFloat(Numbers.two))
                     }
-                }
-                
-                VStack(spacing: Metrics.Spacing.md) {
-                    ForEach(secondOpponent.players ?? [], id: \.id) { player in
-                        PlayerItemListView(player: player, imagePosition: .leading)
+                    
+                    if let secondOpponent {
+                        VStack(spacing: Metrics.Spacing.md) {
+                            ForEach(secondOpponent.players ?? [], id: \.id) { player in
+                                PlayerItemListView(player: player, imagePosition: .leading)
+                            }
+                        }
+                        .if(firstOpponent.players?.isEmpty ?? true) { content in
+                            content
+                                .padding(.leading, proxy.size.width/CGFloat(Numbers.two))
+                        }
                     }
                 }
             }
+        } else {
+            EmptyView()
+                .fullContainerCenter()
         }
     }
     

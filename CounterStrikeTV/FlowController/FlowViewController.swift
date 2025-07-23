@@ -19,8 +19,10 @@ final class FlowViewController {
     private enum Constants {
         
         enum NavigationBar {
-            static let font: UIFont = .systemFont(ofSize: 14, weight: .bold)
+            static let backButtonLeftSpacing: CGFloat = -2
+            static let font: UIFont = .systemFont(ofSize: 16, weight: .bold)
             static let backButtonImageName = "ic-arrow-left"
+            static let titleMinimumScaleFactor: CGFloat = 0.7
         }
     }
     
@@ -62,28 +64,54 @@ final class FlowViewController {
             NSAttributedString.Key.font: Constants.NavigationBar.font
         ]
         navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        setupNavigationBarBackButton()
+    }
+    
+    private func setupNavigationBarBackButton() {
+        let yourBackImage = UIImage(
+            named: Constants.NavigationBar.backButtonImageName
+        )?.withAlignmentRectInsets(
+            .init(
+                top: .zero,
+                left: Constants.NavigationBar.backButtonLeftSpacing,
+                bottom: .zero,
+                right: .zero
+            )
+        )
         
+        navigationController?.navigationBar.tintColor = UIColor.white
+        navigationController?.navigationBar.topItem?.backButtonDisplayMode = .minimal
+        navigationController?.navigationBar.backIndicatorImage = yourBackImage
+        navigationController?.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
     }
     
     // MARK: - INTERNAL METHODS
     
     func navigateToMatchView(match: Match) {
-        let matchView = factory.makeMatchView(match: match)
-        navigateTo(view: matchView)
+        let matchViewController = factory.makeMatchView(match: match).wrappedByHostingController
+        buildResizableNavTitleView(viewController: matchViewController, text: match.description)
+        navigateTo(matchViewController)
     }
     
     // MARK: - PRIVATE METHODS
     
-    private func navigateTo(view: some View) {
-        let viewController = view.wrappedByHostingController
+    private func navigateTo(_ viewController: UIViewController) {
         viewController.navigationItem.largeTitleDisplayMode = .never
-        
-        let yourBackImage = UIImage(named: Constants.NavigationBar.backButtonImageName)
-        
-        navigationController?.navigationBar.backIndicatorImage = yourBackImage
-        navigationController?.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
-        navigationController?.navigationBar.backItem?.backButtonTitle = ""
-
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    private func buildResizableNavTitleView(viewController: UIViewController, text: String) {
+        let titleLabel = UILabel()
+        titleLabel.text = text
+        titleLabel.font = Constants.NavigationBar.font
+        titleLabel.textColor = .white
+        titleLabel.numberOfLines = .zero
+        titleLabel.textAlignment = .center
+        titleLabel.lineBreakMode = .byTruncatingTail
+        titleLabel.adjustsFontSizeToFitWidth = true
+        titleLabel.minimumScaleFactor = Constants.NavigationBar.titleMinimumScaleFactor
+        titleLabel.sizeToFit()
+        
+        viewController.navigationItem.titleView = titleLabel
     }
 }

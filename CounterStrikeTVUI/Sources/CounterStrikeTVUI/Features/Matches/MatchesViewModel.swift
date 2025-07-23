@@ -15,7 +15,7 @@ public class MatchesViewModel: ObservableObject {
     // MARK: - CONSTANTS
     
     private enum Constants {
-        static let validNumberOfOpponents: Int = 2
+        static let validNumberOfOpponents: Int = 1
     }
     
     // MARK: - ENUM'S
@@ -99,14 +99,14 @@ public class MatchesViewModel: ObservableObject {
         
         do {
             let matches = try await service.fetchMatches(data: .init(page: nextMatchesPage))
-            return handleMatchesResponse(matches)
+            return filterMatchesByNumberOfOpponents(matches)
         } catch let error {
             throw error
         }
     }
     
-    private func handleMatchesResponse(_ response: [Match]) -> [Match] {
-        return response.filter { $0.opponents.count == Constants.validNumberOfOpponents }
+    private func filterMatchesByNumberOfOpponents(_ response: [Match]) -> [Match] {
+        return response.filter { $0.opponents.count >= Constants.validNumberOfOpponents }
     }
     
     private func buildNextMatchesPage() -> Int? {

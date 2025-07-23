@@ -140,6 +140,7 @@ public struct MatchesView: View {
     private func handleFirstPageState(_ state: ViewState<Void>) {
         switch state {
         case .loading:
+            hasMatchesFetchFailed = false
             isFetchingFirstPage = true
         case .success:
             isFetchingFirstPage = false

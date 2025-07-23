@@ -1,0 +1,1898 @@
+[
+    {
+        "begin_at": "2025-07-22T22:34:05Z",
+        "detailed_stats": true,
+        "draw": false,
+        "end_at": null,
+        "forfeit": false,
+        "game_advantage": null,
+        "games": [
+            {
+                "begin_at": "2025-07-22T22:34:07Z",
+                "complete": true,
+                "detailed_stats": true,
+                "end_at": "2025-07-22T23:17:00Z",
+                "finished": true,
+                "forfeit": false,
+                "id": 178779,
+                "length": 2572,
+                "match_id": 1213755,
+                "position": 1,
+                "status": "finished",
+                "winner": {
+                    "id": 132618,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": "2025-07-22T23:33:44Z",
+                "complete": true,
+                "detailed_stats": true,
+                "end_at": "2025-07-23T00:12:07Z",
+                "finished": true,
+                "forfeit": false,
+                "id": 178780,
+                "length": 2302,
+                "match_id": 1213755,
+                "position": 2,
+                "status": "finished",
+                "winner": {
+                    "id": 131253,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": "2025-07-23T00:33:01Z",
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178781,
+                "length": null,
+                "match_id": 1213755,
+                "position": 3,
+                "status": "running",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            }
+        ],
+        "id": 1213755,
+        "league": {
+            "id": 5420,
+            "image_url": null,
+            "modified_at": "2025-07-20T15:46:57Z",
+            "name": "KaBuM! Prime League",
+            "slug": "cs-go-kabum-prime-league",
+            "url": null
+        },
+        "league_id": 5420,
+        "live": {
+            "opens_at": null,
+            "supported": false,
+            "url": null
+        },
+        "match_type": "best_of",
+        "modified_at": "2025-07-23T00:35:32Z",
+        "name": "Grand final: ODK vs FLA",
+        "number_of_games": 3,
+        "opponents": [
+            {
+                "opponent": {
+                    "acronym": "ODK",
+                    "id": 131253,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/131253\/900px_oddik_allmode.png",
+                    "location": "BR",
+                    "modified_at": "2025-07-20T16:08:19Z",
+                    "name": "ODDIK",
+                    "slug": "oddik"
+                },
+                "type": "Team"
+            },
+            {
+                "opponent": {
+                    "acronym": "FLA",
+                    "id": 132618,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/132618\/189px_flamengo_esports_2022_allmode.png",
+                    "location": "BR",
+                    "modified_at": "2025-07-21T14:25:33Z",
+                    "name": "Flamengo Esports",
+                    "slug": "flamengo-esports-cs-go"
+                },
+                "type": "Team"
+            }
+        ],
+        "original_scheduled_at": "2025-07-22T22:00:00Z",
+        "rescheduled": true,
+        "results": [
+            {
+                "score": 1,
+                "team_id": 131253
+            },
+            {
+                "score": 1,
+                "team_id": 132618
+            }
+        ],
+        "scheduled_at": "2025-07-22T22:35:00Z",
+        "serie": {
+            "begin_at": "2025-07-18T22:00:00Z",
+            "end_at": "2025-07-25T22:00:00Z",
+            "full_name": "2025",
+            "id": 9528,
+            "league_id": 5420,
+            "modified_at": "2025-07-20T15:46:57Z",
+            "name": "",
+            "season": null,
+            "slug": "cs-go-kabum-prime-league-2025",
+            "winner_id": null,
+            "winner_type": "Team",
+            "year": 2025
+        },
+        "serie_id": 9528,
+        "slug": "oddik-vs-flamengo-esports-2025-07-23",
+        "status": "running",
+        "streams_list": [
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=xjokerbr",
+                "language": "pt",
+                "main": false,
+                "official": false,
+                "raw_url": "https:\/\/www.twitch.tv\/xjokerbr"
+            },
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=watchfulTVb",
+                "language": "en",
+                "main": true,
+                "official": true,
+                "raw_url": "https:\/\/www.twitch.tv\/watchfulTVb"
+            }
+        ],
+        "tournament": {
+            "begin_at": "2025-07-18T22:00:00Z",
+            "country": null,
+            "detailed_stats": true,
+            "end_at": "2025-07-25T22:00:00Z",
+            "has_bracket": true,
+            "id": 17215,
+            "league_id": 5420,
+            "live_supported": false,
+            "modified_at": "2025-07-21T14:27:21Z",
+            "name": "Playoffs",
+            "prizepool": null,
+            "region": "SA",
+            "serie_id": 9528,
+            "slug": "cs-go-kabum-prime-league-2025-playoffs",
+            "tier": "d",
+            "type": "online",
+            "winner_id": null,
+            "winner_type": "Team"
+        },
+        "tournament_id": 17215,
+        "videogame": {
+            "id": 3,
+            "name": "Counter-Strike",
+            "slug": "cs-go"
+        },
+        "videogame_title": {
+            "id": 13,
+            "name": "Counter-Strike 2",
+            "slug": "cs-2",
+            "videogame_id": 3
+        },
+        "videogame_version": null,
+        "winner": null,
+        "winner_id": null,
+        "winner_type": "Team"
+    },
+    {
+        "begin_at": "2025-07-23T08:00:00Z",
+        "detailed_stats": true,
+        "draw": false,
+        "end_at": null,
+        "forfeit": false,
+        "game_advantage": null,
+        "games": [
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178797,
+                "length": null,
+                "match_id": 1213998,
+                "position": 1,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178798,
+                "length": null,
+                "match_id": 1213998,
+                "position": 2,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178799,
+                "length": null,
+                "match_id": 1213998,
+                "position": 3,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            }
+        ],
+        "id": 1213998,
+        "league": {
+            "id": 5232,
+            "image_url": "https:\/\/cdn.pandascore.co\/images\/league\/image\/5232\/799px-cct_2024_europe_allmode-png",
+            "modified_at": "2024-04-13T08:58:18Z",
+            "name": "CCT Europe",
+            "slug": "cs-go-cct-europe",
+            "url": null
+        },
+        "league_id": 5232,
+        "live": {
+            "opens_at": null,
+            "supported": false,
+            "url": null
+        },
+        "match_type": "best_of",
+        "modified_at": "2025-07-22T20:04:55Z",
+        "name": "SIN vs EX-SAB",
+        "number_of_games": 3,
+        "opponents": [
+            {
+                "opponent": {
+                    "acronym": "SIN",
+                    "id": 127014,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/127014\/927px_sinners_esports_full_allmode.png",
+                    "location": "CZ",
+                    "modified_at": "2025-07-22T15:09:28Z",
+                    "name": "Sinners",
+                    "slug": "sinners"
+                },
+                "type": "Team"
+            },
+            {
+                "opponent": {
+                    "acronym": "EX-SAB",
+                    "id": 137044,
+                    "image_url": null,
+                    "location": "UA",
+                    "modified_at": "2025-07-22T15:09:30Z",
+                    "name": "ex-Sabre Esports",
+                    "slug": "ex-sabre-esports"
+                },
+                "type": "Team"
+            }
+        ],
+        "original_scheduled_at": "2025-07-23T08:00:00Z",
+        "rescheduled": false,
+        "results": [
+            {
+                "score": 0,
+                "team_id": 127014
+            },
+            {
+                "score": 0,
+                "team_id": 137044
+            }
+        ],
+        "scheduled_at": "2025-07-23T08:00:00Z",
+        "serie": {
+            "begin_at": "2025-07-23T08:00:00Z",
+            "end_at": "2025-07-28T18:00:00Z",
+            "full_name": "Closed Qualifier: Series #4 season 3 2025",
+            "id": 9533,
+            "league_id": 5232,
+            "modified_at": "2025-07-22T15:25:40Z",
+            "name": "Closed Qualifier: Series #4",
+            "season": "3",
+            "slug": "cs-go-cct-europe-closed-qualifier-series-4-3-2025",
+            "winner_id": null,
+            "winner_type": "Team",
+            "year": 2025
+        },
+        "serie_id": 9533,
+        "slug": "sinners-vs-ex-sabre-esports-2025-07-23",
+        "status": "not_started",
+        "streams_list": [
+            {
+                "embed_url": null,
+                "language": "en",
+                "main": true,
+                "official": true,
+                "raw_url": "https:\/\/kick.com\/cct_cs"
+            }
+        ],
+        "tournament": {
+            "begin_at": "2025-07-23T08:00:00Z",
+            "country": null,
+            "detailed_stats": true,
+            "end_at": "2025-07-27T11:00:00Z",
+            "has_bracket": true,
+            "id": 17231,
+            "league_id": 5232,
+            "live_supported": false,
+            "modified_at": "2025-07-22T15:25:40Z",
+            "name": "Group A",
+            "prizepool": null,
+            "region": "WEU",
+            "serie_id": 9533,
+            "slug": "cs-go-cct-europe-closed-qualifier-series-4-3-2025-group-a",
+            "tier": "d",
+            "type": "online",
+            "winner_id": null,
+            "winner_type": "Team"
+        },
+        "tournament_id": 17231,
+        "videogame": {
+            "id": 3,
+            "name": "Counter-Strike",
+            "slug": "cs-go"
+        },
+        "videogame_title": {
+            "id": 13,
+            "name": "Counter-Strike 2",
+            "slug": "cs-2",
+            "videogame_id": 3
+        },
+        "videogame_version": null,
+        "winner": null,
+        "winner_id": null,
+        "winner_type": "Team"
+    },
+    {
+        "begin_at": "2025-07-23T08:00:00Z",
+        "detailed_stats": false,
+        "draw": false,
+        "end_at": null,
+        "forfeit": false,
+        "game_advantage": null,
+        "games": [
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178401,
+                "length": null,
+                "match_id": 1212349,
+                "position": 1,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178402,
+                "length": null,
+                "match_id": 1212349,
+                "position": 2,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178403,
+                "length": null,
+                "match_id": 1212349,
+                "position": 3,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            }
+        ],
+        "id": 1212349,
+        "league": {
+            "id": 4854,
+            "image_url": "https:\/\/cdn.pandascore.co\/images\/league\/image\/4854\/799px-european_pro_league_2023_lightmode-png",
+            "modified_at": "2023-12-22T16:34:11Z",
+            "name": "European Pro League",
+            "slug": "cs-go-european-pro-league",
+            "url": null
+        },
+        "league_id": 4854,
+        "live": {
+            "opens_at": null,
+            "supported": false,
+            "url": null
+        },
+        "match_type": "best_of",
+        "modified_at": "2025-07-22T20:04:51Z",
+        "name": "Elimination match: FC vs SNG",
+        "number_of_games": 3,
+        "opponents": [
+            {
+                "opponent": {
+                    "acronym": "FC",
+                    "id": 136002,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/136002\/285px_fisher_college_allmode.png",
+                    "location": "US",
+                    "modified_at": "2025-07-22T15:13:20Z",
+                    "name": "Fisher College",
+                    "slug": "fisher-college"
+                },
+                "type": "Team"
+            },
+            {
+                "opponent": {
+                    "acronym": "SNG",
+                    "id": 136593,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/136593\/sangal.png",
+                    "location": "TR",
+                    "modified_at": "2025-07-18T20:31:07Z",
+                    "name": "Sangal ALTERS",
+                    "slug": "sangal-alters"
+                },
+                "type": "Team"
+            }
+        ],
+        "original_scheduled_at": "2025-07-23T08:00:00Z",
+        "rescheduled": false,
+        "results": [
+            {
+                "score": 0,
+                "team_id": 136002
+            },
+            {
+                "score": 0,
+                "team_id": 136593
+            }
+        ],
+        "scheduled_at": "2025-07-23T08:00:00Z",
+        "serie": {
+            "begin_at": "2025-07-19T08:00:00Z",
+            "end_at": "2025-08-05T22:00:00Z",
+            "full_name": "Division 2 season 29 2025",
+            "id": 9523,
+            "league_id": 4854,
+            "modified_at": "2025-07-18T20:28:58Z",
+            "name": "Division 2",
+            "season": "29",
+            "slug": "cs-go-european-pro-league-division-2-29-2025",
+            "winner_id": null,
+            "winner_type": "Team",
+            "year": 2025
+        },
+        "serie_id": 9523,
+        "slug": "fisher-college-vs-sangal-alters-2025-07-23",
+        "status": "not_started",
+        "streams_list": [
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=eplcs_en2",
+                "language": "en",
+                "main": true,
+                "official": true,
+                "raw_url": "https:\/\/www.twitch.tv\/eplcs_en2"
+            },
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=eplcs_ru",
+                "language": "ru",
+                "main": false,
+                "official": false,
+                "raw_url": "https:\/\/www.twitch.tv\/eplcs_ru"
+            }
+        ],
+        "tournament": {
+            "begin_at": "2025-07-19T08:00:00Z",
+            "country": null,
+            "detailed_stats": false,
+            "end_at": "2025-07-28T11:00:00Z",
+            "has_bracket": true,
+            "id": 17204,
+            "league_id": 4854,
+            "live_supported": false,
+            "modified_at": "2025-07-18T20:31:08Z",
+            "name": "Group A",
+            "prizepool": null,
+            "region": "WEU",
+            "serie_id": 9523,
+            "slug": "cs-go-european-pro-league-division-2-29-2025-group-a",
+            "tier": "d",
+            "type": "online",
+            "winner_id": null,
+            "winner_type": "Team"
+        },
+        "tournament_id": 17204,
+        "videogame": {
+            "id": 3,
+            "name": "Counter-Strike",
+            "slug": "cs-go"
+        },
+        "videogame_title": {
+            "id": 13,
+            "name": "Counter-Strike 2",
+            "slug": "cs-2",
+            "videogame_id": 3
+        },
+        "videogame_version": null,
+        "winner": null,
+        "winner_id": null,
+        "winner_type": "Team"
+    },
+    {
+        "begin_at": "2025-07-23T08:00:00Z",
+        "detailed_stats": false,
+        "draw": false,
+        "end_at": null,
+        "forfeit": false,
+        "game_advantage": null,
+        "games": [
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178284,
+                "length": null,
+                "match_id": 1211622,
+                "position": 1,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178285,
+                "length": null,
+                "match_id": 1211622,
+                "position": 2,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178286,
+                "length": null,
+                "match_id": 1211622,
+                "position": 3,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            }
+        ],
+        "id": 1211622,
+        "league": {
+            "id": 5078,
+            "image_url": "https:\/\/cdn.pandascore.co\/images\/league\/image\/5078\/800px-united21_allmode-png",
+            "modified_at": "2023-12-22T16:36:10Z",
+            "name": "United21",
+            "slug": "cs-go-united21",
+            "url": null
+        },
+        "league_id": 5078,
+        "live": {
+            "opens_at": null,
+            "supported": false,
+            "url": null
+        },
+        "match_type": "best_of",
+        "modified_at": "2025-07-22T20:04:50Z",
+        "name": "Winners match: WOPA vs FUT",
+        "number_of_games": 3,
+        "opponents": [
+            {
+                "opponent": {
+                    "acronym": "WOPA",
+                    "id": 134816,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/134816\/190px_wopa_esport_allmode.png",
+                    "location": "DK",
+                    "modified_at": "2025-07-18T20:32:20Z",
+                    "name": "WOPA Esport",
+                    "slug": "wopa-esport"
+                },
+                "type": "Team"
+            },
+            {
+                "opponent": {
+                    "acronym": "FUT",
+                    "id": 136955,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/136955\/fut_esportslogo_square.png",
+                    "location": "FR",
+                    "modified_at": "2025-07-19T09:57:04Z",
+                    "name": "FUT Esports",
+                    "slug": "fut-esports-cs-go"
+                },
+                "type": "Team"
+            }
+        ],
+        "original_scheduled_at": "2025-07-23T08:00:00Z",
+        "rescheduled": false,
+        "results": [
+            {
+                "score": 0,
+                "team_id": 134816
+            },
+            {
+                "score": 0,
+                "team_id": 136955
+            }
+        ],
+        "scheduled_at": "2025-07-23T08:00:00Z",
+        "serie": {
+            "begin_at": "2025-07-18T08:00:00Z",
+            "end_at": "2025-08-04T21:00:00Z",
+            "full_name": "Season 35 2025",
+            "id": 9519,
+            "league_id": 5078,
+            "modified_at": "2025-07-17T10:55:39Z",
+            "name": "",
+            "season": "35",
+            "slug": "cs-go-united21-35-2025",
+            "winner_id": null,
+            "winner_type": "Team",
+            "year": 2025
+        },
+        "serie_id": 9519,
+        "slug": "wopa-esport-2025-07-23",
+        "status": "not_started",
+        "streams_list": [
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=united21_en",
+                "language": "en",
+                "main": true,
+                "official": true,
+                "raw_url": "https:\/\/www.twitch.tv\/united21_en"
+            }
+        ],
+        "tournament": {
+            "begin_at": "2025-07-19T08:00:00Z",
+            "country": null,
+            "detailed_stats": false,
+            "end_at": "2025-07-26T14:00:00Z",
+            "has_bracket": true,
+            "id": 17189,
+            "league_id": 5078,
+            "live_supported": false,
+            "modified_at": "2025-07-17T10:55:39Z",
+            "name": "Group B",
+            "prizepool": null,
+            "region": "WEU",
+            "serie_id": 9519,
+            "slug": "cs-go-united21-35-2025-group-b",
+            "tier": "d",
+            "type": "online",
+            "winner_id": null,
+            "winner_type": "Team"
+        },
+        "tournament_id": 17189,
+        "videogame": {
+            "id": 3,
+            "name": "Counter-Strike",
+            "slug": "cs-go"
+        },
+        "videogame_title": {
+            "id": 13,
+            "name": "Counter-Strike 2",
+            "slug": "cs-2",
+            "videogame_id": 3
+        },
+        "videogame_version": null,
+        "winner": null,
+        "winner_id": null,
+        "winner_type": "Team"
+    },
+    {
+        "begin_at": "2025-07-23T08:30:00Z",
+        "detailed_stats": true,
+        "draw": false,
+        "end_at": null,
+        "forfeit": false,
+        "game_advantage": null,
+        "games": [
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 177973,
+                "length": null,
+                "match_id": 1208789,
+                "position": 1,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 177974,
+                "length": null,
+                "match_id": 1208789,
+                "position": 2,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 177975,
+                "length": null,
+                "match_id": 1208789,
+                "position": 3,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            }
+        ],
+        "id": 1208789,
+        "league": {
+            "id": 4161,
+            "image_url": null,
+            "modified_at": "2019-03-04T11:00:40Z",
+            "name": "IEM",
+            "slug": "cs-go-iem",
+            "url": null
+        },
+        "league_id": 4161,
+        "live": {
+            "opens_at": "2025-07-23T08:15:00.000000Z",
+            "supported": true,
+            "url": "wss:\/\/live.pandascore.co\/matches\/1208789"
+        },
+        "match_type": "best_of",
+        "modified_at": "2025-07-22T20:08:02Z",
+        "name": "Round of 16 match 6: TYLOO vs VP",
+        "number_of_games": 3,
+        "opponents": [
+            {
+                "opponent": {
+                    "acronym": "TYLOO",
+                    "id": 3248,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/3248\/TYLOO.png",
+                    "location": "CN",
+                    "modified_at": "2025-07-19T06:17:20Z",
+                    "name": "TYLOO",
+                    "slug": "tyloo-cs-go"
+                },
+                "type": "Team"
+            },
+            {
+                "opponent": {
+                    "acronym": "VP",
+                    "id": 3288,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/3288\/600px_virtus.pro_2019.png",
+                    "location": "RU",
+                    "modified_at": "2025-07-12T06:27:28Z",
+                    "name": "Virtus.pro",
+                    "slug": "virtus-pro-75b4744b-43d9-4ebd-a8dc-f1e0f9be69b3"
+                },
+                "type": "Team"
+            }
+        ],
+        "original_scheduled_at": "2025-07-23T10:00:00Z",
+        "rescheduled": true,
+        "results": [
+            {
+                "score": 0,
+                "team_id": 3248
+            },
+            {
+                "score": 0,
+                "team_id": 3288
+            }
+        ],
+        "scheduled_at": "2025-07-23T08:30:00Z",
+        "serie": {
+            "begin_at": "2025-07-23T08:30:00Z",
+            "end_at": "2025-08-03T22:00:00Z",
+            "full_name": "Cologne 2025",
+            "id": 9495,
+            "league_id": 4161,
+            "modified_at": "2025-07-18T02:14:44Z",
+            "name": "Cologne",
+            "season": null,
+            "slug": "cs-go-iem-cologne-2025",
+            "winner_id": null,
+            "winner_type": "Team",
+            "year": 2025
+        },
+        "serie_id": 9495,
+        "slug": "tyloo-vs-virtus-pro-2025-07-23",
+        "status": "not_started",
+        "streams_list": [
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=ESLCS",
+                "language": "en",
+                "main": true,
+                "official": true,
+                "raw_url": "https:\/\/www.twitch.tv\/ESLCS"
+            },
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=ESLCSb",
+                "language": "en",
+                "main": false,
+                "official": false,
+                "raw_url": "https:\/\/www.twitch.tv\/ESLCSb"
+            },
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=DACHCS",
+                "language": "de",
+                "main": false,
+                "official": false,
+                "raw_url": "https:\/\/www.twitch.tv\/DACHCS"
+            }
+        ],
+        "tournament": {
+            "begin_at": "2025-07-23T08:30:00Z",
+            "country": "DE",
+            "detailed_stats": true,
+            "end_at": "2025-07-25T18:00:00Z",
+            "has_bracket": true,
+            "id": 17123,
+            "league_id": 4161,
+            "live_supported": true,
+            "modified_at": "2025-07-21T12:55:27Z",
+            "name": "Play-In",
+            "prizepool": null,
+            "region": "WEU",
+            "serie_id": 9495,
+            "slug": "cs-go-iem-cologne-2025-play-in",
+            "tier": "s",
+            "type": "offline",
+            "winner_id": null,
+            "winner_type": "Team"
+        },
+        "tournament_id": 17123,
+        "videogame": {
+            "id": 3,
+            "name": "Counter-Strike",
+            "slug": "cs-go"
+        },
+        "videogame_title": {
+            "id": 13,
+            "name": "Counter-Strike 2",
+            "slug": "cs-2",
+            "videogame_id": 3
+        },
+        "videogame_version": null,
+        "winner": null,
+        "winner_id": null,
+        "winner_type": "Team"
+    },
+    {
+        "begin_at": "2025-07-23T08:30:00Z",
+        "detailed_stats": true,
+        "draw": false,
+        "end_at": null,
+        "forfeit": false,
+        "game_advantage": null,
+        "games": [
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 177970,
+                "length": null,
+                "match_id": 1208788,
+                "position": 1,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 177971,
+                "length": null,
+                "match_id": 1208788,
+                "position": 2,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 177972,
+                "length": null,
+                "match_id": 1208788,
+                "position": 3,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            }
+        ],
+        "id": 1208788,
+        "league": {
+            "id": 4161,
+            "image_url": null,
+            "modified_at": "2019-03-04T11:00:40Z",
+            "name": "IEM",
+            "slug": "cs-go-iem",
+            "url": null
+        },
+        "league_id": 4161,
+        "live": {
+            "opens_at": "2025-07-23T08:15:00.000000Z",
+            "supported": true,
+            "url": "wss:\/\/live.pandascore.co\/matches\/1208788"
+        },
+        "match_type": "best_of",
+        "modified_at": "2025-07-22T20:07:58Z",
+        "name": "Round of 16 match 5: GL vs coL",
+        "number_of_games": 3,
+        "opponents": [
+            {
+                "opponent": {
+                    "acronym": "GL",
+                    "id": 125847,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/125847\/800px_gamer_legion_2023_lightmode.png",
+                    "location": "DE",
+                    "modified_at": "2025-07-17T23:32:56Z",
+                    "name": "GamerLegion",
+                    "slug": "gamerlegion"
+                },
+                "type": "Team"
+            },
+            {
+                "opponent": {
+                    "acronym": "coL",
+                    "id": 3310,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/3310\/600px_complexity_2025_full_allmode.png",
+                    "location": "US",
+                    "modified_at": "2025-07-17T23:32:49Z",
+                    "name": "Complexity",
+                    "slug": "complexity"
+                },
+                "type": "Team"
+            }
+        ],
+        "original_scheduled_at": "2025-07-23T10:00:00Z",
+        "rescheduled": true,
+        "results": [
+            {
+                "score": 0,
+                "team_id": 125847
+            },
+            {
+                "score": 0,
+                "team_id": 3310
+            }
+        ],
+        "scheduled_at": "2025-07-23T08:30:00Z",
+        "serie": {
+            "begin_at": "2025-07-23T08:30:00Z",
+            "end_at": "2025-08-03T22:00:00Z",
+            "full_name": "Cologne 2025",
+            "id": 9495,
+            "league_id": 4161,
+            "modified_at": "2025-07-18T02:14:44Z",
+            "name": "Cologne",
+            "season": null,
+            "slug": "cs-go-iem-cologne-2025",
+            "winner_id": null,
+            "winner_type": "Team",
+            "year": 2025
+        },
+        "serie_id": 9495,
+        "slug": "gamerlegion-vs-complexity-2025-07-23",
+        "status": "not_started",
+        "streams_list": [
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=ESLCS",
+                "language": "en",
+                "main": true,
+                "official": true,
+                "raw_url": "https:\/\/www.twitch.tv\/ESLCS"
+            },
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=ESLCSb",
+                "language": "en",
+                "main": false,
+                "official": false,
+                "raw_url": "https:\/\/www.twitch.tv\/ESLCSb"
+            },
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=DACHCS",
+                "language": "de",
+                "main": false,
+                "official": false,
+                "raw_url": "https:\/\/www.twitch.tv\/DACHCS"
+            }
+        ],
+        "tournament": {
+            "begin_at": "2025-07-23T08:30:00Z",
+            "country": "DE",
+            "detailed_stats": true,
+            "end_at": "2025-07-25T18:00:00Z",
+            "has_bracket": true,
+            "id": 17123,
+            "league_id": 4161,
+            "live_supported": true,
+            "modified_at": "2025-07-21T12:55:27Z",
+            "name": "Play-In",
+            "prizepool": null,
+            "region": "WEU",
+            "serie_id": 9495,
+            "slug": "cs-go-iem-cologne-2025-play-in",
+            "tier": "s",
+            "type": "offline",
+            "winner_id": null,
+            "winner_type": "Team"
+        },
+        "tournament_id": 17123,
+        "videogame": {
+            "id": 3,
+            "name": "Counter-Strike",
+            "slug": "cs-go"
+        },
+        "videogame_title": {
+            "id": 13,
+            "name": "Counter-Strike 2",
+            "slug": "cs-2",
+            "videogame_id": 3
+        },
+        "videogame_version": null,
+        "winner": null,
+        "winner_id": null,
+        "winner_type": "Team"
+    },
+    {
+        "begin_at": "2025-07-23T09:30:00Z",
+        "detailed_stats": true,
+        "draw": false,
+        "end_at": null,
+        "forfeit": false,
+        "game_advantage": null,
+        "games": [
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178765,
+                "length": null,
+                "match_id": 1213717,
+                "position": 1,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178766,
+                "length": null,
+                "match_id": 1213717,
+                "position": 2,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178767,
+                "length": null,
+                "match_id": 1213717,
+                "position": 3,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            }
+        ],
+        "id": 1213717,
+        "league": {
+            "id": 5296,
+            "image_url": "https:\/\/cdn.pandascore.co\/images\/league\/image\/5296\/800px-exort-gg_lightmode-png",
+            "modified_at": "2024-09-24T10:37:11Z",
+            "name": "Exort Series",
+            "slug": "cs-go-exort-series",
+            "url": null
+        },
+        "league_id": 5296,
+        "live": {
+            "opens_at": null,
+            "supported": false,
+            "url": null
+        },
+        "match_type": "best_of",
+        "modified_at": "2025-07-22T20:05:50Z",
+        "name": "Round 2: AUR.YB vs 777",
+        "number_of_games": 3,
+        "opponents": [
+            {
+                "opponent": {
+                    "acronym": "AUR.YB",
+                    "id": 133125,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/133125\/140px_aurora_young_blud_allmode.png",
+                    "location": "RU",
+                    "modified_at": "2025-07-19T08:25:45Z",
+                    "name": "Aurora Young Blood",
+                    "slug": "aurora-young-blood"
+                },
+                "type": "Team"
+            },
+            {
+                "opponent": {
+                    "acronym": "777",
+                    "id": 128110,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/128110\/full_vertical_logo.png",
+                    "location": "NO",
+                    "modified_at": "2025-07-19T08:25:43Z",
+                    "name": "777",
+                    "slug": "777-esports"
+                },
+                "type": "Team"
+            }
+        ],
+        "original_scheduled_at": "2025-07-23T09:30:00Z",
+        "rescheduled": false,
+        "results": [
+            {
+                "score": 0,
+                "team_id": 133125
+            },
+            {
+                "score": 0,
+                "team_id": 128110
+            }
+        ],
+        "scheduled_at": "2025-07-23T09:30:00Z",
+        "serie": {
+            "begin_at": "2025-07-20T09:30:00Z",
+            "end_at": "2025-08-09T19:00:00Z",
+            "full_name": "Season 14 2025",
+            "id": 9524,
+            "league_id": 5296,
+            "modified_at": "2025-07-19T08:38:49Z",
+            "name": "",
+            "season": "14",
+            "slug": "cs-go-exort-series-14-2025",
+            "winner_id": null,
+            "winner_type": "Team",
+            "year": 2025
+        },
+        "serie_id": 9524,
+        "slug": "aurora-young-blood-vs-777-2025-07-23",
+        "status": "not_started",
+        "streams_list": [
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=exort_en",
+                "language": "en",
+                "main": true,
+                "official": true,
+                "raw_url": "https:\/\/www.twitch.tv\/exort_en"
+            },
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=exort_en2",
+                "language": "en",
+                "main": false,
+                "official": false,
+                "raw_url": "https:\/\/www.twitch.tv\/exort_en2"
+            }
+        ],
+        "tournament": {
+            "begin_at": "2025-07-20T09:30:00Z",
+            "country": null,
+            "detailed_stats": true,
+            "end_at": "2025-07-24T17:00:00Z",
+            "has_bracket": false,
+            "id": 17211,
+            "league_id": 5296,
+            "live_supported": false,
+            "modified_at": "2025-07-19T14:19:33Z",
+            "name": "Contenders Stage",
+            "prizepool": null,
+            "region": "WEU",
+            "serie_id": 9524,
+            "slug": "cs-go-exort-series-14-2025-contenders-stage",
+            "tier": "d",
+            "type": "online",
+            "winner_id": null,
+            "winner_type": "Team"
+        },
+        "tournament_id": 17211,
+        "videogame": {
+            "id": 3,
+            "name": "Counter-Strike",
+            "slug": "cs-go"
+        },
+        "videogame_title": {
+            "id": 13,
+            "name": "Counter-Strike 2",
+            "slug": "cs-2",
+            "videogame_id": 3
+        },
+        "videogame_version": null,
+        "winner": null,
+        "winner_id": null,
+        "winner_type": "Team"
+    },
+    {
+        "begin_at": "2025-07-23T10:30:00Z",
+        "detailed_stats": false,
+        "draw": false,
+        "end_at": null,
+        "forfeit": false,
+        "game_advantage": null,
+        "games": [
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178404,
+                "length": null,
+                "match_id": 1212351,
+                "position": 1,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178405,
+                "length": null,
+                "match_id": 1212351,
+                "position": 2,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178406,
+                "length": null,
+                "match_id": 1212351,
+                "position": 3,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            }
+        ],
+        "id": 1212351,
+        "league": {
+            "id": 4854,
+            "image_url": "https:\/\/cdn.pandascore.co\/images\/league\/image\/4854\/799px-european_pro_league_2023_lightmode-png",
+            "modified_at": "2023-12-22T16:34:11Z",
+            "name": "European Pro League",
+            "slug": "cs-go-european-pro-league",
+            "url": null
+        },
+        "league_id": 4854,
+        "live": {
+            "opens_at": null,
+            "supported": false,
+            "url": null
+        },
+        "match_type": "best_of",
+        "modified_at": "2025-07-22T20:05:59Z",
+        "name": "Winners match: EF vs MANA",
+        "number_of_games": 3,
+        "opponents": [
+            {
+                "opponent": {
+                    "acronym": "EF",
+                    "id": 129413,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/129413\/800px_eternal_fire_2023_allmode.png",
+                    "location": "TR",
+                    "modified_at": "2025-07-22T15:11:37Z",
+                    "name": "Eternal Fire",
+                    "slug": "eternal-fire"
+                },
+                "type": "Team"
+            },
+            {
+                "opponent": {
+                    "acronym": "MANA",
+                    "id": 137080,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/137080\/148px_mana_e_sports_lightmode.png",
+                    "location": "",
+                    "modified_at": "2025-07-18T20:31:07Z",
+                    "name": "MANA eSports",
+                    "slug": "mana-esports"
+                },
+                "type": "Team"
+            }
+        ],
+        "original_scheduled_at": "2025-07-23T10:30:00Z",
+        "rescheduled": false,
+        "results": [
+            {
+                "score": 0,
+                "team_id": 129413
+            },
+            {
+                "score": 0,
+                "team_id": 137080
+            }
+        ],
+        "scheduled_at": "2025-07-23T10:30:00Z",
+        "serie": {
+            "begin_at": "2025-07-19T08:00:00Z",
+            "end_at": "2025-08-05T22:00:00Z",
+            "full_name": "Division 2 season 29 2025",
+            "id": 9523,
+            "league_id": 4854,
+            "modified_at": "2025-07-18T20:28:58Z",
+            "name": "Division 2",
+            "season": "29",
+            "slug": "cs-go-european-pro-league-division-2-29-2025",
+            "winner_id": null,
+            "winner_type": "Team",
+            "year": 2025
+        },
+        "serie_id": 9523,
+        "slug": "eternal-fire-vs-mana-esports-2025-07-23",
+        "status": "not_started",
+        "streams_list": [
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=eplcs_en2",
+                "language": "en",
+                "main": true,
+                "official": true,
+                "raw_url": "https:\/\/www.twitch.tv\/eplcs_en2"
+            },
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=eplcs_ru",
+                "language": "ru",
+                "main": false,
+                "official": false,
+                "raw_url": "https:\/\/www.twitch.tv\/eplcs_ru"
+            }
+        ],
+        "tournament": {
+            "begin_at": "2025-07-19T08:00:00Z",
+            "country": null,
+            "detailed_stats": false,
+            "end_at": "2025-07-28T11:00:00Z",
+            "has_bracket": true,
+            "id": 17204,
+            "league_id": 4854,
+            "live_supported": false,
+            "modified_at": "2025-07-18T20:31:08Z",
+            "name": "Group A",
+            "prizepool": null,
+            "region": "WEU",
+            "serie_id": 9523,
+            "slug": "cs-go-european-pro-league-division-2-29-2025-group-a",
+            "tier": "d",
+            "type": "online",
+            "winner_id": null,
+            "winner_type": "Team"
+        },
+        "tournament_id": 17204,
+        "videogame": {
+            "id": 3,
+            "name": "Counter-Strike",
+            "slug": "cs-go"
+        },
+        "videogame_title": {
+            "id": 13,
+            "name": "Counter-Strike 2",
+            "slug": "cs-2",
+            "videogame_id": 3
+        },
+        "videogame_version": null,
+        "winner": null,
+        "winner_id": null,
+        "winner_type": "Team"
+    },
+    {
+        "begin_at": "2025-07-23T10:30:00Z",
+        "detailed_stats": false,
+        "draw": false,
+        "end_at": null,
+        "forfeit": false,
+        "game_advantage": null,
+        "games": [
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178287,
+                "length": null,
+                "match_id": 1211623,
+                "position": 1,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178288,
+                "length": null,
+                "match_id": 1211623,
+                "position": 2,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": false,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178289,
+                "length": null,
+                "match_id": 1211623,
+                "position": 3,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            }
+        ],
+        "id": 1211623,
+        "league": {
+            "id": 5078,
+            "image_url": "https:\/\/cdn.pandascore.co\/images\/league\/image\/5078\/800px-united21_allmode-png",
+            "modified_at": "2023-12-22T16:36:10Z",
+            "name": "United21",
+            "slug": "cs-go-united21",
+            "url": null
+        },
+        "league_id": 5078,
+        "live": {
+            "opens_at": null,
+            "supported": false,
+            "url": null
+        },
+        "match_type": "best_of",
+        "modified_at": "2025-07-22T20:05:58Z",
+        "name": "Elimination match: MSC vs AAB",
+        "number_of_games": 3,
+        "opponents": [
+            {
+                "opponent": {
+                    "acronym": "MSC",
+                    "id": 127911,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/127911\/t56871.png",
+                    "location": "DK",
+                    "modified_at": "2025-07-18T20:34:21Z",
+                    "name": "MASONIC",
+                    "slug": "masonic"
+                },
+                "type": "Team"
+            },
+            {
+                "opponent": {
+                    "acronym": "AAB",
+                    "id": 128394,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/128394\/aa_b_esport_logo_red_hvid_bg.png",
+                    "location": "DK",
+                    "modified_at": "2025-07-19T08:30:25Z",
+                    "name": "AaB esport",
+                    "slug": "aab-esport"
+                },
+                "type": "Team"
+            }
+        ],
+        "original_scheduled_at": "2025-07-23T10:30:00Z",
+        "rescheduled": false,
+        "results": [
+            {
+                "score": 0,
+                "team_id": 127911
+            },
+            {
+                "score": 0,
+                "team_id": 128394
+            }
+        ],
+        "scheduled_at": "2025-07-23T10:30:00Z",
+        "serie": {
+            "begin_at": "2025-07-18T08:00:00Z",
+            "end_at": "2025-08-04T21:00:00Z",
+            "full_name": "Season 35 2025",
+            "id": 9519,
+            "league_id": 5078,
+            "modified_at": "2025-07-17T10:55:39Z",
+            "name": "",
+            "season": "35",
+            "slug": "cs-go-united21-35-2025",
+            "winner_id": null,
+            "winner_type": "Team",
+            "year": 2025
+        },
+        "serie_id": 9519,
+        "slug": "masonic-2025-07-23",
+        "status": "not_started",
+        "streams_list": [
+            {
+                "embed_url": "https:\/\/player.twitch.tv\/?channel=united21_en",
+                "language": "en",
+                "main": true,
+                "official": true,
+                "raw_url": "https:\/\/www.twitch.tv\/united21_en"
+            }
+        ],
+        "tournament": {
+            "begin_at": "2025-07-19T08:00:00Z",
+            "country": null,
+            "detailed_stats": false,
+            "end_at": "2025-07-26T14:00:00Z",
+            "has_bracket": true,
+            "id": 17189,
+            "league_id": 5078,
+            "live_supported": false,
+            "modified_at": "2025-07-17T10:55:39Z",
+            "name": "Group B",
+            "prizepool": null,
+            "region": "WEU",
+            "serie_id": 9519,
+            "slug": "cs-go-united21-35-2025-group-b",
+            "tier": "d",
+            "type": "online",
+            "winner_id": null,
+            "winner_type": "Team"
+        },
+        "tournament_id": 17189,
+        "videogame": {
+            "id": 3,
+            "name": "Counter-Strike",
+            "slug": "cs-go"
+        },
+        "videogame_title": {
+            "id": 13,
+            "name": "Counter-Strike 2",
+            "slug": "cs-2",
+            "videogame_id": 3
+        },
+        "videogame_version": null,
+        "winner": null,
+        "winner_id": null,
+        "winner_type": "Team"
+    },
+    {
+        "begin_at": "2025-07-23T11:00:00Z",
+        "detailed_stats": true,
+        "draw": false,
+        "end_at": null,
+        "forfeit": false,
+        "game_advantage": null,
+        "games": [
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178800,
+                "length": null,
+                "match_id": 1213999,
+                "position": 1,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178801,
+                "length": null,
+                "match_id": 1213999,
+                "position": 2,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            },
+            {
+                "begin_at": null,
+                "complete": false,
+                "detailed_stats": true,
+                "end_at": null,
+                "finished": false,
+                "forfeit": false,
+                "id": 178802,
+                "length": null,
+                "match_id": 1213999,
+                "position": 3,
+                "status": "not_started",
+                "winner": {
+                    "id": null,
+                    "type": "Team"
+                },
+                "winner_type": "Team"
+            }
+        ],
+        "id": 1213999,
+        "league": {
+            "id": 5232,
+            "image_url": "https:\/\/cdn.pandascore.co\/images\/league\/image\/5232\/799px-cct_2024_europe_allmode-png",
+            "modified_at": "2024-04-13T08:58:18Z",
+            "name": "CCT Europe",
+            "slug": "cs-go-cct-europe",
+            "url": null
+        },
+        "league_id": 5232,
+        "live": {
+            "opens_at": null,
+            "supported": false,
+            "url": null
+        },
+        "match_type": "best_of",
+        "modified_at": "2025-07-22T20:06:06Z",
+        "name": "DNE vs SNZ",
+        "number_of_games": 3,
+        "opponents": [
+            {
+                "opponent": {
+                    "acronym": "DNE",
+                    "id": 129356,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/129356\/1092px_dynamo_eclot_allmode.png",
+                    "location": "CZ",
+                    "modified_at": "2025-07-22T15:09:26Z",
+                    "name": "Dynamo Eclot",
+                    "slug": "dynamo-eclot-cs-go"
+                },
+                "type": "Team"
+            },
+            {
+                "opponent": {
+                    "acronym": "SNZ",
+                    "id": 137199,
+                    "image_url": "https:\/\/cdn.pandascore.co\/images\/team\/image\/137199\/senza_esports_2025_lightmode.png",
+                    "location": "RU",
+                    "modified_at": "2025-07-22T15:09:29Z",
+                    "name": "SENZA Esports",
+                    "slug": "senza-esports-cs-go"
+                },
+                "type": "Team"
+            }
+        ],
+        "original_scheduled_at": "2025-07-23T11:00:00Z",
+        "rescheduled": false,
+        "results": [
+            {
+                "score": 0,
+                "team_id": 129356
+            },
+            {
+                "score": 0,
+                "team_id": 137199
+            }
+        ],
+        "scheduled_at": "2025-07-23T11:00:00Z",
+        "serie": {
+            "begin_at": "2025-07-23T08:00:00Z",
+            "end_at": "2025-07-28T18:00:00Z",
+            "full_name": "Closed Qualifier: Series #4 season 3 2025",
+            "id": 9533,
+            "league_id": 5232,
+            "modified_at": "2025-07-22T15:25:40Z",
+            "name": "Closed Qualifier: Series #4",
+            "season": "3",
+            "slug": "cs-go-cct-europe-closed-qualifier-series-4-3-2025",
+            "winner_id": null,
+            "winner_type": "Team",
+            "year": 2025
+        },
+        "serie_id": 9533,
+        "slug": "dynamo-eclot-vs-senza-esports-2025-07-23",
+        "status": "not_started",
+        "streams_list": [
+            {
+                "embed_url": null,
+                "language": "en",
+                "main": true,
+                "official": true,
+                "raw_url": "https:\/\/kick.com\/cct_cs"
+            }
+        ],
+        "tournament": {
+            "begin_at": "2025-07-23T08:00:00Z",
+            "country": null,
+            "detailed_stats": true,
+            "end_at": "2025-07-27T11:00:00Z",
+            "has_bracket": true,
+            "id": 17231,
+            "league_id": 5232,
+            "live_supported": false,
+            "modified_at": "2025-07-22T15:25:40Z",
+            "name": "Group A",
+            "prizepool": null,
+            "region": "WEU",
+            "serie_id": 9533,
+            "slug": "cs-go-cct-europe-closed-qualifier-series-4-3-2025-group-a",
+            "tier": "d",
+            "type": "online",
+            "winner_id": null,
+            "winner_type": "Team"
+        },
+        "tournament_id": 17231,
+        "videogame": {
+            "id": 3,
+            "name": "Counter-Strike",
+            "slug": "cs-go"
+        },
+        "videogame_title": {
+            "id": 13,
+            "name": "Counter-Strike 2",
+            "slug": "cs-2",
+            "videogame_id": 3
+        },
+        "videogame_version": null,
+        "winner": null,
+        "winner_id": null,
+        "winner_type": "Team"
+    }
+]
