@@ -66,7 +66,7 @@ public final class Services: ServicesProtocol {
         let secondMatchesToCache = Array(matches.safeSuffix(from: Constants.indexToSplitMatchesToCache))
         
         await cacheMatchesImage(firstMatchesToCache)
-        Task {
+        Task(priority: .background) {
             await cacheMatchesImage(secondMatchesToCache)
         }
     }

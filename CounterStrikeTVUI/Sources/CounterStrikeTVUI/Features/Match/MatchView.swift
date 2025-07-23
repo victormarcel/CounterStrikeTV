@@ -16,6 +16,8 @@ public struct MatchView: View {
         
         static let firstTeamIndex: Int = .zero
         static let secondTeamIndex: Int = 1
+        static let noDefinedTeamsFeedbackText = "match_view_no_defined_teams_tex".localizedBy(bundle: .module)
+        static let noTeamPlayersFoundFeedbackText = "match_view_no_defined_teams_tex".localizedBy(bundle: .module)
         
         enum MainStack {
             static let spacing: CGFloat = 20
@@ -24,6 +26,10 @@ public struct MatchView: View {
         enum DateTime {
             static let size: CGFloat = 12
             static let ongoingText = "ongoing".localizedBy(bundle: .module).capitalized
+        }
+        
+        enum FeedbackView {
+            static let fontSize: CGFloat = 14
         }
     }
     
@@ -63,7 +69,7 @@ public struct MatchView: View {
     // MARK: - UI
     
     public var body: some View {
-        VStack(spacing: Constants.MainStack.spacing) {
+        VStack {
             if isLoading {
                 ProgressView()
                     .tint(.white)
@@ -86,49 +92,56 @@ public struct MatchView: View {
     
     @ViewBuilder
     private var contentView: some View {
-        MatchOpponentsView(opponents: viewModel.opponents)
-            .padding(.top, Metrics.Spacing.md)
-        
-        Text(timeText)
-            .textStyle(fontSize: Constants.DateTime.size, color: .white)
-            .bold()
-        
-        playersListView
-        
-        Spacer()
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: Constants.MainStack.spacing) {
+                MatchOpponentsView(opponents: viewModel.opponents)
+                    .padding(.top, Metrics.Spacing.md)
+                
+                Text(timeText)
+                    .textStyle(fontSize: Constants.DateTime.size, color: .white)
+                    .bold()
+                
+                playersListView
+            }
+        }
+        .scrollBounceBehavior(.basedOnSize)
     }
     
     @ViewBuilder
     private var playersListView: some View {
         if let firstOpponent {
-            GeometryReader { proxy in
-                HStack(alignment: .top, spacing: Metrics.Spacing.md) {
-                    VStack(spacing: Metrics.Spacing.md) {
-                        ForEach(firstOpponent.players ?? [], id: \.id) { player in
-                            PlayerItemListView(player: player, imagePosition: .trailing)
-                        }
-                    }.if(secondOpponent == nil || secondOpponent?.players?.isEmpty ?? true) { content in
-                        content
-                            .padding(.trailing, proxy.size.width/CGFloat(Numbers.two))
-                    }
-                    
-                    if let secondOpponent {
-                        VStack(spacing: Metrics.Spacing.md) {
-                            ForEach(secondOpponent.players ?? [], id: \.id) { player in
-                                PlayerItemListView(player: player, imagePosition: .leading)
-                            }
-                        }
-                        .if(firstOpponent.players?.isEmpty ?? true) { content in
-                            content
-                                .padding(.leading, proxy.size.width/CGFloat(Numbers.two))
-                        }
-                    }
+            HStack(alignment: .top, spacing: Metrics.Spacing.md) {
+                buildTeamPlayersView(firstOpponent, position: .trailing)
+                
+                buildTeamPlayersView(secondOpponent, position: .leading)
+            }
+            .padding(.bottom, Metrics.Spacing.xl)
+        } else {
+            buildFeedbackTextView(Constants.noDefinedTeamsFeedbackText)
+        }
+    }
+    
+    @ViewBuilder
+    private func buildTeamPlayersView(_ team: Team?, position: PlayerItemListView.ImagePosition) -> some View {
+        if let players = team?.players, !players.isEmpty {
+            VStack(spacing: Metrics.Spacing.md) {
+                ForEach(players, id: \.id) { player in
+                    PlayerItemListView(player: player, imagePosition: position)
                 }
             }
         } else {
-            EmptyView()
-                .fullContainerCenter()
+            buildFeedbackTextView(Constants.noTeamPlayersFoundFeedbackText)
         }
+        
+    }
+    
+    @ViewBuilder
+    private func buildFeedbackTextView(_ text: String) -> some View {
+        Text(text)
+            .textStyle(fontSize: Constants.FeedbackView.fontSize, color: .white)
+            .multilineTextAlignment(.center)
+            .padding(.vertical, Metrics.Spacing.md)
+            .fullContainerCenter()
     }
     
     @ViewBuilder
