@@ -1,0 +1,17 @@
+{
+    "acronym" : "EX-SAB",
+    "current_videogame" : {
+        "id" : 3,
+        "name" : "Counter-Strike",
+        "slug" : "cs-go"
+    },
+    "id" : 137044,
+    "image_url" : null,
+    "location" : "UA",
+    "modified_at" : "2025-07-22T15:09:30Z",
+    "name" : "ex-Sabre Esports",
+    "players" : [
+        
+    ],
+    "slug" : "ex-sabre-esports"
+}

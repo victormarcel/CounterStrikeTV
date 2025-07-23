@@ -1,0 +1,14 @@
+{
+    "active" : true,
+    "age" : 24,
+    "birthday" : "2000-10-29",
+    "first_name" : "Max",
+    "id" : 25109,
+    "image_url" : "https:\/\/cdn.pandascore.co\/images\/player\/image\/25109\/shock_sinners.png",
+    "last_name" : "Kvapil",
+    "modified_at" : "2025-07-22T15:09:28Z",
+    "name" : "SHOCK",
+    "nationality" : "CZ",
+    "role" : null,
+    "slug" : "shock-max-kvapil"
+}

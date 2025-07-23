@@ -14,9 +14,9 @@ public struct TeamRequestData: ServiceRequestDataProtocol {
     private enum Constants {
         
         enum Header {
-            static let authorization = "Authorization"
-        }
-    }
+            static let authorizationKey = "Authorization"
+            static let authorizationValue = "Bearer \(ServiceCredentials().pandaScoreApiKey)"
+        }    }
     
     // MARK: - PUBLIC PROPERTIES
     
@@ -49,6 +49,6 @@ public struct TeamRequestData: ServiceRequestDataProtocol {
     }
     
     public func buildHeaders() -> [String: String]? {
-        [Constants.Header.authorization: ServiceCredentials().pandaScoreApiAuthorization]
+        [Constants.Header.authorizationKey: Constants.Header.authorizationValue]
     }
 }

@@ -9,9 +9,15 @@ import Foundation
 
 public final class NetworkingOperations: NetworkingOperationsProtocol {
     
+    // MARK: - PRIVATE PROPERTIES
+    
+    private let session: URLSession
+    
     // MARK: - INITIALIZERS
     
-    public init() {}
+    public init(session: URLSession = .shared) {
+        self.session = session
+    }
     
     // MARK: - INTERNAL METHODS
     
@@ -21,7 +27,7 @@ public final class NetworkingOperations: NetworkingOperationsProtocol {
                 throw NetworkingOperationsError.invalidUrl
             }
             
-            let (data, _) = try await URLSession.shared.data(from: url)
+            let (data, _) = try await session.data(from: url)
             return data
         } catch let error {
             throw error
@@ -31,7 +37,7 @@ public final class NetworkingOperations: NetworkingOperationsProtocol {
     public func fetch<T: Decodable>(request: HttpRequestProtocol) async throws -> T {
         do {
             let urlRequest = try buildUrlRequestFrom(requestData: request)
-            let (data, _) = try await URLSession.shared.data(for: urlRequest)
+            let (data, _) = try await session.data(for: urlRequest)
             
             try? printPrettyResponse(data)
             

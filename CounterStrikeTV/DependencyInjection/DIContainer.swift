@@ -33,14 +33,13 @@ class DIContainer {
             NetworkingOperations()
         }
         
+        container.register(NetworkingOperationsProtocol.self) { (r, session: URLSession) in
+            NetworkingOperations(session: session)
+        }
+        
         container.register(ServicesProtocol.self) { r in
             let networkingOperations = r.resolveInstance(NetworkingOperationsProtocol.self)
             return Services(networkingOperations: networkingOperations)
-        }
-        
-        container.register(ImageDownloaderProtocol.self) { r in
-            let networkingOperations = r.resolveInstance(NetworkingOperationsProtocol.self)
-            return ImageDownloader(networkingOperations: networkingOperations)
         }
     }
 }

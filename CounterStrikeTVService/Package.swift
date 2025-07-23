@@ -21,7 +21,7 @@ let package = Package(
         ),
         .testTarget(
             name: "CounterStrikeTVServiceTests",
-            dependencies: ["CounterStrikeTVService"]
+            dependencies: ["CounterStrikeTVService", "CounterStrikeTVDomain"]
         ),
     ]
 )

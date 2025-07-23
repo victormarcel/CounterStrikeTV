@@ -17,8 +17,8 @@ public struct MatchesRequestData: ServiceRequestDataProtocol {
         static let defaultPageSize: Int = 10
         
         enum Header {
-            static let bearer = "Bearer"
-            static let authorization = "Authorization"
+            static let authorizationKey = "Authorization"
+            static let authorizationValue = "Bearer \(ServiceCredentials().pandaScoreApiKey)"
         }
     }
     
@@ -99,6 +99,6 @@ public struct MatchesRequestData: ServiceRequestDataProtocol {
     }
     
     public func buildHeaders() -> [String: String]? {
-        [Constants.Header.authorization: ServiceCredentials().pandaScoreApiAuthorization]
+        [Constants.Header.authorizationKey: Constants.Header.authorizationValue]
     }
 }
