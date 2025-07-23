@@ -20,7 +20,7 @@ Even though this app focuses on a relatively simple user experience, its interna
 
 To run the project:
 
-1. At the root of the project, create a file named `Config.json`.
+1. Inside the CounterStrikeTV folder (at the same level as Info.plist), create a file named `Config.json`.
 2. Add the following structure:
 
 ```json
@@ -30,7 +30,7 @@ To run the project:
 ```
 
 > This design ensures secure and flexible handling of the PandaScore API key, avoiding hardcoded credentials.
-
+3. Run the application with an iOS 17+ simulator.
 ---
 
 ## 🧱 Project Structure
